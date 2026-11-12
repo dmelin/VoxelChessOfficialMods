@@ -138,7 +138,8 @@ Every key is optional and inherited if left out (see "How mods combine").
 |---|---|
 | `collide` | The piece collides with the victim. `"style": "push"` shoves it away, `"impact"` (default) smashes it. A piece that is **in the air** (a `fly` piece with its route blocked) instead **lands on** the victim and crushes it. |
 | `crush` | The piece crushes the victim under it (the same landing). On the ground it runs into it like `collide`. |
-| `floor_flip` | A trapdoor drops the victim through the floor. |
+| `floor_flip` | A trapdoor hinged on one side swings up and over and tips the victim away; it topples and crumbles on the board. |
+| `trap_door` | The same square, but it drops open **downwards**: the victim tilts with the door and crumbles at once, the rubble falling into the pit before the door swings shut. |
 | `beam` | Every voxel marked `beam_emitter` fires a beam that sweeps across the victim. |
 
 **A `beam` capture needs at least one voxel marked `beam_emitter` in the piece's design.** A pack
@@ -147,15 +148,19 @@ design without one after the mods are combined is ignored (see above). Glowing v
 only decoration.
 
 - `"sweep"` sets the direction of the beam as seen from the attacker: `top_bottom` (default),
-  `bottom_top`, `left_right`, `right_left`. Emitters keep their layout, so two eyes become two
-  parallel beams.
+  `bottom_top`, `left_right`, `right_left`, `center`, `center_explode`. Emitters keep their layout,
+  so two eyes become two parallel beams. The first four sweep the beam across the victim and cut it
+  in two. The last two do not sweep: every emitter fires straight at the middle of the victim.
+  - `center`: the beam runs on through and out the far side, then the victim collapses into rubble.
+  - `center_explode`: the beam stops at the middle, about halfway through, and the victim bursts
+    outwards in a small explosion, its voxels flying in every direction.
 - `"beam_start"` says when the beam goes off:
   - `"end"` (default): the piece moves up to just short of the victim (a knight stops at the
     corner of its L), fires, then steps onto the square.
   - `"start"`: the piece turns towards the victim and fires from where it stands, before it moves.
     Then, if its direction of travel is not the one it faces (a knight's first leg), it turns to
     it, and makes its move. The core set's queen uses `start`.
-- A flier that has to fly takes off and stays in the air while it does its trick (`floor_flip` and
+- A flier that has to fly takes off and stays in the air while it does its trick (`floor_flip`, `trap_door` and
   `beam` too), and only then flies over the victim's square and lands.
 
 ## `board`
