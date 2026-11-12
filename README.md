@@ -137,7 +137,6 @@ Every key is optional and inherited if left out (see "How mods combine").
 | `mode` | What happens |
 |---|---|
 | `collide` | The piece collides with the victim. `"style": "push"` shoves it away, `"impact"` (default) smashes it. A piece that is **in the air** (a `fly` piece with its route blocked) instead **lands on** the victim and crushes it. |
-| `crush` | The piece crushes the victim under it (the same landing). On the ground it runs into it like `collide`. |
 | `floor_flip` | A trapdoor hinged on one side swings up and over and tips the victim away; it topples and crumbles on the board. |
 | `trap_door` | The same square, but it drops open **downwards**: the victim tilts with the door and crumbles at once, the rubble falling into the pit before the door swings shut. |
 | `beam` | Every voxel marked `beam_emitter` fires a beam that sweeps across the victim. |
