@@ -1,0 +1,311 @@
+{
+  "id": "classic_staunton",
+  "name": "Classic Staunton",
+  "description": "The classic look: Staunton-style pieces in ivory and ebony, shaped like a real tournament set. Each piece is tall and fills its square, and is easy to tell apart at a glance: the king's cross, the queen's crown of points, the bishop's slit mitre, the knight's horse head, the rook's battlements and the pawn's round head. The board is plain light and dark wood. All behaviour is left as standard.",
+  "pieces": {
+    "pawn": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [1, 0, 4], "to": [13, 1, 10], "material": "wood"},
+          {"from": [4, 0, 1], "to": [10, 1, 13], "material": "wood"},
+          {"from": [3, 0, 3], "to": [11, 1, 11], "material": "wood"},
+          {"from": [2, 2, 5], "to": [12, 2, 9], "material": "trim"},
+          {"from": [5, 2, 2], "to": [9, 2, 12], "material": "trim"},
+          {"from": [4, 2, 4], "to": [10, 2, 10], "material": "trim"},
+          {"from": [3, 3, 5], "to": [11, 5, 9], "material": "wood"},
+          {"from": [5, 3, 3], "to": [9, 5, 11], "material": "wood"},
+          {"from": [4, 3, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [4, 6, 6], "to": [10, 9, 8], "material": "wood"},
+          {"from": [6, 6, 4], "to": [8, 9, 10], "material": "wood"},
+          {"from": [5, 6, 5], "to": [9, 9, 9], "material": "wood"},
+          {"from": [3, 10, 5], "to": [11, 10, 9], "material": "trim"},
+          {"from": [5, 10, 3], "to": [9, 10, 11], "material": "trim"},
+          {"from": [4, 10, 4], "to": [10, 10, 10], "material": "trim"},
+          {"from": [4, 11, 6], "to": [10, 11, 8], "material": "wood"},
+          {"from": [6, 11, 4], "to": [8, 11, 10], "material": "wood"},
+          {"from": [5, 11, 5], "to": [9, 11, 9], "material": "wood"},
+          {"from": [3, 12, 5], "to": [11, 14, 9], "material": "wood"},
+          {"from": [5, 12, 3], "to": [9, 14, 11], "material": "wood"},
+          {"from": [4, 12, 4], "to": [10, 14, 10], "material": "wood"},
+          {"from": [4, 15, 6], "to": [10, 15, 8], "material": "wood"},
+          {"from": [6, 15, 4], "to": [8, 15, 10], "material": "wood"},
+          {"from": [5, 15, 5], "to": [9, 15, 9], "material": "wood"},
+          {"from": [5, 16, 6], "to": [9, 16, 8], "material": "wood"},
+          {"from": [6, 16, 5], "to": [8, 16, 9], "material": "wood"},
+          {"from": [6, 16, 6], "to": [8, 16, 8], "material": "wood"},
+          {"from": [7, 13, 3], "to": [7, 13, 3], "material": "wood", "beam_emitter": true}
+        ]
+      },
+      "colors": {
+        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "rook": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
+          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
+          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
+          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
+          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
+          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
+          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
+          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
+          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [3, 6, 5], "to": [11, 12, 9], "material": "wood"},
+          {"from": [5, 6, 3], "to": [9, 12, 11], "material": "wood"},
+          {"from": [4, 6, 4], "to": [10, 12, 10], "material": "wood"},
+          {"from": [2, 13, 5], "to": [12, 13, 9], "material": "trim"},
+          {"from": [5, 13, 2], "to": [9, 13, 12], "material": "trim"},
+          {"from": [4, 13, 4], "to": [10, 13, 10], "material": "trim"},
+          {"from": [1, 14, 4], "to": [13, 16, 10], "material": "wood"},
+          {"from": [4, 14, 1], "to": [10, 16, 13], "material": "wood"},
+          {"from": [3, 14, 3], "to": [11, 16, 11], "material": "wood"},
+          {"from": [1, 17, 4], "to": [13, 17, 10], "material": "trim"},
+          {"from": [4, 17, 1], "to": [10, 17, 13], "material": "trim"},
+          {"from": [3, 17, 3], "to": [11, 17, 11], "material": "trim"},
+          {"from": [1, 18, 4], "to": [13, 18, 10], "material": "wood"},
+          {"from": [4, 18, 1], "to": [10, 18, 13], "material": "wood"},
+          {"from": [3, 18, 3], "to": [11, 18, 11], "material": "wood"},
+          {"from": [1, 19, 1], "to": [3, 22, 3], "material": "wood"},
+          {"from": [6, 19, 1], "to": [8, 22, 3], "material": "wood"},
+          {"from": [11, 19, 1], "to": [13, 22, 3], "material": "wood"},
+          {"from": [1, 19, 6], "to": [3, 22, 8], "material": "wood"},
+          {"from": [11, 19, 6], "to": [13, 22, 8], "material": "wood"},
+          {"from": [1, 19, 11], "to": [3, 22, 13], "material": "wood"},
+          {"from": [6, 19, 11], "to": [8, 22, 13], "material": "wood"},
+          {"from": [11, 19, 11], "to": [13, 22, 13], "material": "wood"},
+          {"from": [7, 9, 3], "to": [7, 9, 3], "material": "wood", "beam_emitter": true}
+        ]
+      },
+      "colors": {
+        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "bishop": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
+          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
+          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
+          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
+          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
+          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
+          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
+          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
+          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
+          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
+          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
+          {"from": [4, 10, 6], "to": [10, 13, 8], "material": "wood"},
+          {"from": [6, 10, 4], "to": [8, 13, 10], "material": "wood"},
+          {"from": [5, 10, 5], "to": [9, 13, 9], "material": "wood"},
+          {"from": [2, 14, 5], "to": [12, 14, 9], "material": "trim"},
+          {"from": [5, 14, 2], "to": [9, 14, 12], "material": "trim"},
+          {"from": [4, 14, 4], "to": [10, 14, 10], "material": "trim"},
+          {"from": [2, 15, 5], "to": [12, 18, 9], "material": "wood"},
+          {"from": [5, 15, 2], "to": [9, 18, 12], "material": "wood"},
+          {"from": [4, 15, 4], "to": [10, 18, 10], "material": "wood"},
+          {"from": [3, 19, 5], "to": [11, 21, 9], "material": "wood"},
+          {"from": [5, 19, 3], "to": [9, 21, 11], "material": "wood"},
+          {"from": [4, 19, 4], "to": [10, 21, 10], "material": "wood"},
+          {"from": [4, 22, 6], "to": [10, 23, 8], "material": "wood"},
+          {"from": [6, 22, 4], "to": [8, 23, 10], "material": "wood"},
+          {"from": [5, 22, 5], "to": [9, 23, 9], "material": "wood"},
+          {"from": [5, 24, 6], "to": [9, 25, 8], "material": "wood"},
+          {"from": [6, 24, 5], "to": [8, 25, 9], "material": "wood"},
+          {"from": [6, 24, 6], "to": [8, 25, 8], "material": "wood"},
+          {"from": [6, 26, 6], "to": [8, 26, 8], "material": "wood"},
+          {"from": [6, 27, 6], "to": [8, 28, 8], "material": "trim"},
+          {"from": [5, 15, 2], "to": [5, 15, 2], "material": "trim"},
+          {"from": [6, 15, 2], "to": [6, 15, 2], "material": "trim"},
+          {"from": [6, 16, 2], "to": [6, 16, 2], "material": "trim"},
+          {"from": [7, 16, 2], "to": [7, 16, 2], "material": "trim"},
+          {"from": [7, 17, 2], "to": [7, 17, 2], "material": "trim", "beam_emitter": true},
+          {"from": [8, 17, 2], "to": [8, 17, 2], "material": "trim"},
+          {"from": [8, 18, 2], "to": [8, 18, 2], "material": "trim"},
+          {"from": [9, 18, 2], "to": [9, 18, 2], "material": "trim"},
+          {"from": [9, 19, 3], "to": [9, 19, 3], "material": "trim"}
+        ]
+      },
+      "colors": {
+        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "knight": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
+          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
+          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
+          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
+          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
+          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
+          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
+          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
+          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [4, 6, 2], "to": [10, 11, 11], "material": "wood"},
+          {"from": [4, 12, 5], "to": [10, 17, 11], "material": "wood"},
+          {"from": [4, 18, 4], "to": [10, 22, 11], "material": "wood"},
+          {"from": [5, 19, 2], "to": [9, 25, 8], "material": "wood"},
+          {"from": [6, 17, 0], "to": [8, 22, 3], "material": "wood"},
+          {"from": [6, 18, 0], "to": [6, 18, 0], "material": "ink"},
+          {"from": [8, 18, 0], "to": [8, 18, 0], "material": "ink"},
+          {"from": [5, 23, 4], "to": [5, 23, 4], "material": "ink"},
+          {"from": [9, 23, 4], "to": [9, 23, 4], "material": "ink"},
+          {"from": [5, 26, 6], "to": [6, 28, 7], "material": "wood"},
+          {"from": [8, 26, 6], "to": [9, 28, 7], "material": "wood"},
+          {"from": [6, 12, 12], "to": [8, 22, 13], "material": "trim"},
+          {"from": [6, 23, 9], "to": [8, 26, 12], "material": "trim"},
+          {"from": [7, 23, 2], "to": [7, 23, 2], "material": "wood", "beam_emitter": true}
+        ]
+      },
+      "colors": {
+        "white": {"ink": [40, 34, 32], "trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"ink": [215, 205, 185], "trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "queen": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
+          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
+          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
+          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
+          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
+          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
+          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
+          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
+          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
+          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
+          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
+          {"from": [4, 10, 6], "to": [10, 18, 8], "material": "wood"},
+          {"from": [6, 10, 4], "to": [8, 18, 10], "material": "wood"},
+          {"from": [5, 10, 5], "to": [9, 18, 9], "material": "wood"},
+          {"from": [2, 19, 5], "to": [12, 19, 9], "material": "trim"},
+          {"from": [5, 19, 2], "to": [9, 19, 12], "material": "trim"},
+          {"from": [4, 19, 4], "to": [10, 19, 10], "material": "trim"},
+          {"from": [3, 20, 5], "to": [11, 20, 9], "material": "trim"},
+          {"from": [5, 20, 3], "to": [9, 20, 11], "material": "trim"},
+          {"from": [4, 20, 4], "to": [10, 20, 10], "material": "trim"},
+          {"from": [2, 21, 5], "to": [12, 23, 9], "material": "wood"},
+          {"from": [5, 21, 2], "to": [9, 23, 12], "material": "wood"},
+          {"from": [4, 21, 4], "to": [10, 23, 10], "material": "wood"},
+          {"from": [2, 24, 5], "to": [12, 24, 9], "material": "trim"},
+          {"from": [5, 24, 2], "to": [9, 24, 12], "material": "trim"},
+          {"from": [4, 24, 4], "to": [10, 24, 10], "material": "trim"},
+          {"from": [3, 25, 5], "to": [11, 26, 9], "material": "wood"},
+          {"from": [5, 25, 3], "to": [9, 26, 11], "material": "wood"},
+          {"from": [4, 25, 4], "to": [10, 26, 10], "material": "wood"},
+          {"from": [3, 27, 5], "to": [11, 27, 9], "material": "trim"},
+          {"from": [5, 27, 3], "to": [9, 27, 11], "material": "trim"},
+          {"from": [4, 27, 4], "to": [10, 27, 10], "material": "trim"},
+          {"from": [5, 28, 6], "to": [9, 30, 8], "material": "wood"},
+          {"from": [6, 28, 5], "to": [8, 30, 9], "material": "wood"},
+          {"from": [6, 28, 6], "to": [8, 30, 8], "material": "wood"},
+          {"from": [6, 31, 6], "to": [8, 31, 8], "material": "wood"},
+          {"from": [11, 28, 7], "to": [11, 29, 7], "material": "wood"},
+          {"from": [11, 30, 7], "to": [11, 30, 7], "material": "trim", "beam_emitter": true},
+          {"from": [3, 28, 7], "to": [3, 29, 7], "material": "wood"},
+          {"from": [3, 30, 7], "to": [3, 30, 7], "material": "trim", "beam_emitter": true},
+          {"from": [7, 28, 11], "to": [7, 29, 11], "material": "wood"},
+          {"from": [7, 30, 11], "to": [7, 30, 11], "material": "trim", "beam_emitter": true},
+          {"from": [7, 28, 3], "to": [7, 29, 3], "material": "wood"},
+          {"from": [7, 30, 3], "to": [7, 30, 3], "material": "trim", "beam_emitter": true},
+          {"from": [10, 28, 10], "to": [10, 29, 10], "material": "wood"},
+          {"from": [10, 30, 10], "to": [10, 30, 10], "material": "trim", "beam_emitter": true},
+          {"from": [10, 28, 4], "to": [10, 29, 4], "material": "wood"},
+          {"from": [10, 30, 4], "to": [10, 30, 4], "material": "trim", "beam_emitter": true},
+          {"from": [4, 28, 10], "to": [4, 29, 10], "material": "wood"},
+          {"from": [4, 30, 10], "to": [4, 30, 10], "material": "trim", "beam_emitter": true},
+          {"from": [4, 28, 4], "to": [4, 29, 4], "material": "wood"},
+          {"from": [4, 30, 4], "to": [4, 30, 4], "material": "trim", "beam_emitter": true}
+        ]
+      },
+      "colors": {
+        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "king": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
+          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
+          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
+          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
+          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
+          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
+          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
+          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
+          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
+          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
+          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
+          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
+          {"from": [4, 10, 6], "to": [10, 17, 8], "material": "wood"},
+          {"from": [6, 10, 4], "to": [8, 17, 10], "material": "wood"},
+          {"from": [5, 10, 5], "to": [9, 17, 9], "material": "wood"},
+          {"from": [2, 18, 5], "to": [12, 18, 9], "material": "trim"},
+          {"from": [5, 18, 2], "to": [9, 18, 12], "material": "trim"},
+          {"from": [4, 18, 4], "to": [10, 18, 10], "material": "trim"},
+          {"from": [3, 19, 5], "to": [11, 19, 9], "material": "trim"},
+          {"from": [5, 19, 3], "to": [9, 19, 11], "material": "trim"},
+          {"from": [4, 19, 4], "to": [10, 19, 10], "material": "trim"},
+          {"from": [2, 20, 5], "to": [12, 23, 9], "material": "wood"},
+          {"from": [5, 20, 2], "to": [9, 23, 12], "material": "wood"},
+          {"from": [4, 20, 4], "to": [10, 23, 10], "material": "wood"},
+          {"from": [2, 24, 5], "to": [12, 24, 9], "material": "trim"},
+          {"from": [5, 24, 2], "to": [9, 24, 12], "material": "trim"},
+          {"from": [4, 24, 4], "to": [10, 24, 10], "material": "trim"},
+          {"from": [3, 25, 5], "to": [11, 26, 9], "material": "wood"},
+          {"from": [5, 25, 3], "to": [9, 26, 11], "material": "wood"},
+          {"from": [4, 25, 4], "to": [10, 26, 10], "material": "wood"},
+          {"from": [3, 27, 5], "to": [11, 27, 9], "material": "trim"},
+          {"from": [5, 27, 3], "to": [9, 27, 11], "material": "trim"},
+          {"from": [4, 27, 4], "to": [10, 27, 10], "material": "trim"},
+          {"from": [4, 28, 6], "to": [10, 28, 8], "material": "wood"},
+          {"from": [6, 28, 4], "to": [8, 28, 10], "material": "wood"},
+          {"from": [5, 28, 5], "to": [9, 28, 9], "material": "wood"},
+          {"from": [5, 29, 6], "to": [9, 29, 8], "material": "wood"},
+          {"from": [6, 29, 5], "to": [8, 29, 9], "material": "wood"},
+          {"from": [6, 29, 6], "to": [8, 29, 8], "material": "wood"},
+          {"from": [6, 30, 6], "to": [8, 36, 8], "material": "trim"},
+          {"from": [3, 33, 6], "to": [11, 34, 8], "material": "trim"},
+          {"from": [7, 21, 2], "to": [7, 21, 2], "material": "wood", "beam_emitter": true}
+        ]
+      },
+      "colors": {
+        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
+      }
+    },
+    "board": {
+      "model": {
+        "width": 15,
+        "boxes": [
+          {"from": [0, 0, 0], "to": [14, 0, 14], "material": "sq"},
+          {"from": [2, 0, 3], "to": [5, 0, 3], "material": "grain"},
+          {"from": [9, 0, 1], "to": [11, 0, 1], "material": "grain"},
+          {"from": [5, 0, 7], "to": [9, 0, 7], "material": "grain"},
+          {"from": [1, 0, 10], "to": [3, 0, 10], "material": "grain"},
+          {"from": [8, 0, 12], "to": [11, 0, 12], "material": "grain"},
+          {"from": [11, 0, 6], "to": [13, 0, 6], "material": "grain"}
+        ]
+      },
+      "colors": {
+        "white": {"sq": [240, 217, 181], "grain": [228, 203, 165]},
+        "black": {"sq": [181, 136, 99], "grain": [165, 121, 86]}
+      }
+    }
+  }
+}

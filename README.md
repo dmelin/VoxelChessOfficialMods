@@ -1,14 +1,15 @@
 # Voxel Chess Official Mods
 
-The mods that come from the makers of [Voxel Chess](https://github.com/dmelin/VoxelChess), and the
+The mods that come from the makers of Voxel Chess, and the
 guide to writing your own. Copy a mod's folder (`tiny_tank`, `orbs_of_power`) into the game's
 `user://mods/` folder to use it.
 
 - `tiny_tank/`: SciFi Chess
 - `orbs_of_power/`: Orbs of Power
+- `core_set/`: Classic Staunton, the pieces and board the game itself is made of. It is already in
+  the game; this copy is here to read and to start your own mod from (see "The core set" below).
 
-The game itself ships with no mods. The guide below is kept in step with the game's mod loader
-(`scripts/piece_mods.gd`).
+The game ships with the core set and no mods.
 
 # Writing a piece mod
 
@@ -22,7 +23,8 @@ reloads at once to show the change. Click a mod's row to select it and see its `
 it has a `description`) opens its description. Only problems are written under a mod: an invalid
 pack's error, or a piece entry that was ignored.
 
-`tiny_tank/` ("SciFi Chess", in this repo) is the complete example: all six pieces and the board.
+`tiny_tank/` ("SciFi Chess", in this repo) is a complete example: all six pieces and the board.
+`core_set/` is another, and the one every mod is applied on top of.
 
 ## Structure
 
@@ -47,12 +49,12 @@ An invalid pack is shown in the menu with an error and cannot be enabled.
 
 ## How mods combine
 
-A piece is the **standard piece with the enabled mods applied to it one after the other**, in the
+A piece is the **core set's piece with the enabled mods applied to it one after the other**, in the
 order of the list in the menu (a mod lower in the list is applied later).
 
 - **Behaviour attributes** (`speed`, `pass_over_occupied_space`, and each key of `capture`) are
   optional. What a mod leaves out is inherited from the mod before it that said something about the
-  piece, and if there is none, from the standard piece. A mod can change just one thing:
+  piece, and if there is none, from the core set. A mod can change just one thing:
 
   ```json
   { "id": "fast_rooks", "name": "Fast rooks",
@@ -61,7 +63,7 @@ order of the list in the menu (a mod lower in the list is applied later).
 
 - **The design is all or nothing.** `model` and `colors` must come together, and they replace the
   voxels of the piece completely. You cannot recolour three voxels of someone else's piece. A mod
-  that gives no design keeps the design it inherits (a mod's, or the standard one).
+  that gives no design keeps the design it inherits (a mod's, or the core set's).
 
 - **A beam capture needs a beam source** (see below). If, once the mods are put together, a piece
   would capture with a beam but has no `beam_emitter` voxel, that mod's entry for the piece is
@@ -97,7 +99,7 @@ the same materials (max 64). Voxels get a tiny random tint each, so flat colours
 ## `speed`
 
 How fast the piece travels when it moves or goes in for a capture: a whole number from `1`
-(slowest) to `9` (fastest). Leave it out to inherit it. The standard pieces:
+(slowest) to `9` (fastest). Leave it out to inherit it. The core set's pieces:
 
 | Piece | Speed |
 |---|---|
@@ -110,8 +112,8 @@ landing always take the same time.
 
 ## `pass_over_occupied_space`
 
-How the piece gets past pieces standing in its way: `"fly"` or `"flow"`. The standard knight is
-`fly`, every other standard piece `flow`.
+How the piece gets past pieces standing in its way: `"fly"` or `"flow"`. The core set's knight is
+`fly`, every other piece `flow`.
 
 - **`fly`**: the piece only takes off when it has to. If every square it passes over (the
   destination does not count) is free, it stays on the ground and moves normally. A knight has two
@@ -152,7 +154,7 @@ only decoration.
     corner of its L), fires, then steps onto the square.
   - `"start"`: the piece turns towards the victim and fires from where it stands, before it moves.
     Then, if its direction of travel is not the one it faces (a knight's first leg), it turns to
-    it, and makes its move. The standard queen uses `start`.
+    it, and makes its move. The core set's queen uses `start`.
 - A flier that has to fly takes off and stays in the air while it does its trick (`floor_flip` and
   `beam` too), and only then flies over the victim's square and lands.
 
@@ -171,6 +173,148 @@ The board is part of the piece set. The `board` entry is **one board square, one
 
 The SciFi Chess board is granite: a base material, two kinds of speckle voxels scattered over it,
 and a glowing outer ring of voxels in green (white squares) and magenta (black squares).
+
+## The core set
+
+The game's own pieces and board are a pack like any other: **Classic Staunton**, in
+[`core_set/mod.json`](core_set/mod.json). Ivory and ebony pieces, shaped like a tournament set, each
+standing on the full 15 x 15 voxels of its square on a plain light and dark wood board. Every mod is
+applied on top of it, so whatever your mod leaves out is what is described here. To start your own
+mod, copy `core_set/` under a new name, change its `id` and `name`, and edit.
+
+| Piece | Footprint | Height (voxels) | Look |
+|---|---|---|---|
+| pawn | 15 x 15 | 17 | round base, trim ring, a slim stem and a round head |
+| rook | 15 x 15 | 23 | broad base, tall tower, a flared top with eight battlements |
+| bishop | 15 x 15 | 29 | slim body and collar, a pointed mitre with a slit down its front |
+| knight | 15 x 15 | 29 | a horse head facing forward, ears, eyes and a trim mane |
+| queen | 15 x 15 | 32 | tall, ringed body and a crown of points |
+| king | 15 x 15 | 37 | like the queen, taller, with a cross on top |
+| board | 15 x 15 | 1 (one layer) | pale wood squares with a little grain |
+
+Every piece is built the same way, bottom to top: a base of three overlapping boxes (two long
+rectangles crossed, with a smaller one between), a ring of trim, then a body that gets slimmer the
+higher it goes. Each stack of rings is drawn as **three boxes that overlap** (one wide in `x`, one
+wide in `z`, one square in the middle); together they make a rounded cross-section out of plain
+boxes, which is how a voxel piece gets to look round. Look at the pawn below: the base is lines 1-3,
+the trim ring 4-6, the body 7-9, and so on up.
+
+**Materials.** `wood` is the body, `trim` the rings and details; the knight also has `ink` for its
+eyes and nostrils (dark on the white side, light on the black side, so they read on both).
+
+| Material | White | Black |
+|---|---|---|
+| `wood` | `[240, 232, 212]` ivory | `[46, 42, 44]` ebony |
+| `trim` | `[205, 186, 146]` | `[92, 80, 72]` |
+| `ink` (knight) | `[40, 34, 32]` | `[215, 205, 185]` |
+
+The board's materials are `sq` (the square: `[240, 217, 181]` light, `[181, 136, 99]` dark) and
+`grain` (a slightly different shade for the six short lines of grain on each square).
+
+**Behaviour.** The core set uses the standard rules for how pieces move and capture, and a mod
+inherits all of it:
+
+| Piece | `speed` | `pass_over_occupied_space` | `capture` |
+|---|---|---|---|
+| pawn | 7 | `flow` | `{"mode": "collide"}` |
+| knight | 5 | `fly` | `{"mode": "collide"}` |
+| bishop | 5 | `flow` | `{"mode": "beam", "sweep": "top_bottom"}` |
+| rook | 3 | `flow` | `{"mode": "collide", "style": "push"}` |
+| queen | 5 | `flow` | `{"mode": "beam", "sweep": "top_bottom", "beam_start": "start"}` |
+| king | 5 | `flow` | `{"mode": "floor_flip"}` |
+
+**Beam emitters.** Every core piece has at least one `beam_emitter` voxel, so a mod can give any of
+them a beam capture without drawing a new design. They are single voxels, in the same material as
+what surrounds them, so they are not visible as such. Positions are `[x, y, z]`:
+
+| Piece | Emitters |
+|---|---|
+| pawn | `[7, 13, 3]`, on the front of the round head |
+| rook | `[7, 9, 3]`, on the front of the tower |
+| bishop | `[7, 17, 2]`, in the slit of the mitre |
+| knight | `[7, 23, 2]`, on the front of the head |
+| queen | eight, at the tops of the crown's points: `y = 30`, all around |
+| king | `[7, 21, 2]`, on the front of the upper body |
+
+So a mod that only says `"pawn": {"capture": {"mode": "beam"}}` makes the standard pawn fire a
+beam from its head.
+
+### The pawn, in full
+
+The whole design of the core pawn: a mod's `model` has the same shape. Boxes are listed from the
+bottom up, three boxes per level (the overlapping cross-section described above).
+
+```json
+"pawn": {
+  "model": {
+    "width": 15,
+    "boxes": [
+      {"from": [1, 0, 4],  "to": [13, 1, 10], "material": "wood"},
+      {"from": [4, 0, 1],  "to": [10, 1, 13], "material": "wood"},
+      {"from": [3, 0, 3],  "to": [11, 1, 11], "material": "wood"},
+
+      {"from": [2, 2, 5],  "to": [12, 2, 9],  "material": "trim"},
+      {"from": [5, 2, 2],  "to": [9, 2, 12],  "material": "trim"},
+      {"from": [4, 2, 4],  "to": [10, 2, 10], "material": "trim"},
+
+      {"from": [3, 3, 5],  "to": [11, 5, 9],  "material": "wood"},
+      {"from": [5, 3, 3],  "to": [9, 5, 11],  "material": "wood"},
+      {"from": [4, 3, 4],  "to": [10, 5, 10], "material": "wood"},
+
+      {"from": [4, 6, 6],  "to": [10, 9, 8],  "material": "wood"},
+      {"from": [6, 6, 4],  "to": [8, 9, 10],  "material": "wood"},
+      {"from": [5, 6, 5],  "to": [9, 9, 9],   "material": "wood"},
+
+      {"from": [3, 10, 5], "to": [11, 10, 9], "material": "trim"},
+      {"from": [5, 10, 3], "to": [9, 10, 11], "material": "trim"},
+      {"from": [4, 10, 4], "to": [10, 10, 10],"material": "trim"},
+
+      {"from": [4, 11, 6], "to": [10, 11, 8], "material": "wood"},
+      {"from": [6, 11, 4], "to": [8, 11, 10], "material": "wood"},
+      {"from": [5, 11, 5], "to": [9, 11, 9],  "material": "wood"},
+
+      {"from": [3, 12, 5], "to": [11, 14, 9], "material": "wood"},
+      {"from": [5, 12, 3], "to": [9, 14, 11], "material": "wood"},
+      {"from": [4, 12, 4], "to": [10, 14, 10],"material": "wood"},
+
+      {"from": [4, 15, 6], "to": [10, 15, 8], "material": "wood"},
+      {"from": [6, 15, 4], "to": [8, 15, 10], "material": "wood"},
+      {"from": [5, 15, 5], "to": [9, 15, 9],  "material": "wood"},
+
+      {"from": [5, 16, 6], "to": [9, 16, 8],  "material": "wood"},
+      {"from": [6, 16, 5], "to": [8, 16, 9],  "material": "wood"},
+      {"from": [6, 16, 6], "to": [8, 16, 8],  "material": "wood"},
+
+      {"from": [7, 13, 3], "to": [7, 13, 3],  "material": "wood", "beam_emitter": true}
+    ]
+  },
+  "colors": {
+    "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
+    "black": {"trim": [92, 80, 72],    "wood": [46, 42, 44]}
+  }
+}
+```
+
+(Blank lines are only for reading; JSON allows them between items.)
+
+### A mod built on the core set
+
+A mod does not have to redraw anything to change how the core set plays. This one keeps every
+piece of Classic Staunton and only makes the knights and rooks fire beams and the pawns slow:
+
+```json
+{
+  "id": "beam_knights",
+  "name": "Beam knights",
+  "pieces": {
+    "knight": { "capture": { "mode": "beam", "beam_start": "start" } },
+    "rook":   { "capture": { "mode": "beam", "sweep": "left_right" }, "speed": 5 },
+    "pawn":   { "speed": 3 }
+  }
+}
+```
+
+It works because the core knight and rook have `beam_emitter` voxels (see the table above).
 
 ## A small example
 
@@ -224,25 +368,12 @@ be plain JSON.)
 ## Preview
 
 Put a `preview.png` (500x500 works well) next to `mod.json`. The mods menu shows it when the mod is
-selected; a mod without one gets a blank frame saying "no preview". The one for `tiny_tank` is
-drawn from its voxels, on its board squares, by `tools/mod_preview.py` (in the VoxelChess repo) (needs Pillow):
-
-```bash
-python3 tools/mod_preview.py ../VoxelChessOfficialMods/tiny_tank
-```
+selected; a mod without one gets a blank frame saying "no preview". The previews in this repo show
+the mod's pieces as isometric voxel sculptures on its board squares.
 
 ## Trying a design
 
-The piece workshop shows the real game meshes of the standard pieces and of the SciFi Chess mod,
-each on a board square, and reloads when a `mod.json` or `voxels.gd` is saved:
-
-```bash
-GODOT=/Applications/Godot.app/Contents/MacOS/Godot node tools/piece-preview/serve.cjs
-```
-
-then open http://localhost:8061. Validate packs headlessly with:
-
-```bash
-godot --headless --path . --script tests/mods.gd
-godot --headless --path . --script tests/pass_over.gd
-```
+Copy your mod's folder into `user://mods/`, open **MODS** in the game's menu and switch it on. The
+board behind the menu reloads at once. After you change a `mod.json`, switch the mod off and on
+again (or restart the game) to load the new file. A mod with a mistake in it is listed with the
+error and cannot be switched on.
