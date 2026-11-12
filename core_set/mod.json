@@ -1,311 +1,13261 @@
 {
-  "id": "classic_staunton",
-  "name": "Classic Staunton",
-  "description": "The classic look: Staunton-style pieces in ivory and ebony, shaped like a real tournament set. Each piece is tall and fills its square, and is easy to tell apart at a glance: the king's cross, the queen's crown of points, the bishop's slit mitre, the knight's horse head, the rook's battlements and the pawn's round head. The board is plain light and dark wood. All behaviour is left as standard.",
-  "pieces": {
-    "pawn": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [1, 0, 4], "to": [13, 1, 10], "material": "wood"},
-          {"from": [4, 0, 1], "to": [10, 1, 13], "material": "wood"},
-          {"from": [3, 0, 3], "to": [11, 1, 11], "material": "wood"},
-          {"from": [2, 2, 5], "to": [12, 2, 9], "material": "trim"},
-          {"from": [5, 2, 2], "to": [9, 2, 12], "material": "trim"},
-          {"from": [4, 2, 4], "to": [10, 2, 10], "material": "trim"},
-          {"from": [3, 3, 5], "to": [11, 5, 9], "material": "wood"},
-          {"from": [5, 3, 3], "to": [9, 5, 11], "material": "wood"},
-          {"from": [4, 3, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [4, 6, 6], "to": [10, 9, 8], "material": "wood"},
-          {"from": [6, 6, 4], "to": [8, 9, 10], "material": "wood"},
-          {"from": [5, 6, 5], "to": [9, 9, 9], "material": "wood"},
-          {"from": [3, 10, 5], "to": [11, 10, 9], "material": "trim"},
-          {"from": [5, 10, 3], "to": [9, 10, 11], "material": "trim"},
-          {"from": [4, 10, 4], "to": [10, 10, 10], "material": "trim"},
-          {"from": [4, 11, 6], "to": [10, 11, 8], "material": "wood"},
-          {"from": [6, 11, 4], "to": [8, 11, 10], "material": "wood"},
-          {"from": [5, 11, 5], "to": [9, 11, 9], "material": "wood"},
-          {"from": [3, 12, 5], "to": [11, 14, 9], "material": "wood"},
-          {"from": [5, 12, 3], "to": [9, 14, 11], "material": "wood"},
-          {"from": [4, 12, 4], "to": [10, 14, 10], "material": "wood"},
-          {"from": [4, 15, 6], "to": [10, 15, 8], "material": "wood"},
-          {"from": [6, 15, 4], "to": [8, 15, 10], "material": "wood"},
-          {"from": [5, 15, 5], "to": [9, 15, 9], "material": "wood"},
-          {"from": [5, 16, 6], "to": [9, 16, 8], "material": "wood"},
-          {"from": [6, 16, 5], "to": [8, 16, 9], "material": "wood"},
-          {"from": [6, 16, 6], "to": [8, 16, 8], "material": "wood"},
-          {"from": [7, 13, 3], "to": [7, 13, 3], "material": "wood", "beam_emitter": true}
-        ]
-      },
-      "colors": {
-        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
+ "id": "classic_staunton",
+ "name": "Classic Staunton",
+ "description": "The classic look: Staunton-style pieces in ivory and ebony, shaped like a real tournament set. Each piece is tall and fills its square, and is easy to tell apart at a glance: the king's cross, the queen's crown of points, the bishop's slit mitre, the knight's horse head, the rook's battlements and the pawn's round head. The board is plain light and dark wood. All behaviour is left as standard.",
+ "pieces": {
+  "pawn": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       3
+      ],
+      "to": [
+       16,
+       0,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       5
+      ],
+      "to": [
+       17,
+       0,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       0,
+       6
+      ],
+      "to": [
+       18,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       0,
+       7
+      ],
+      "to": [
+       19,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       8
+      ],
+      "to": [
+       21,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       0,
+       17
+      ],
+      "to": [
+       19,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       0,
+       18
+      ],
+      "to": [
+       18,
+       0,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       19
+      ],
+      "to": [
+       17,
+       0,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       20
+      ],
+      "to": [
+       16,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       2
+      ],
+      "to": [
+       16,
+       1,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       3
+      ],
+      "to": [
+       17,
+       1,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       1,
+       5
+      ],
+      "to": [
+       18,
+       1,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       1,
+       6
+      ],
+      "to": [
+       19,
+       1,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       7
+      ],
+      "to": [
+       21,
+       1,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       1,
+       8
+      ],
+      "to": [
+       22,
+       1,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       17
+      ],
+      "to": [
+       21,
+       1,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       1,
+       18
+      ],
+      "to": [
+       19,
+       1,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       1,
+       19
+      ],
+      "to": [
+       18,
+       1,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       20
+      ],
+      "to": [
+       17,
+       1,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       22
+      ],
+      "to": [
+       16,
+       1,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       2,
+       3
+      ],
+      "to": [
+       16,
+       2,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       2,
+       5
+      ],
+      "to": [
+       17,
+       2,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       2,
+       6
+      ],
+      "to": [
+       18,
+       2,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       2,
+       7
+      ],
+      "to": [
+       19,
+       2,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       2,
+       8
+      ],
+      "to": [
+       21,
+       2,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       2,
+       17
+      ],
+      "to": [
+       19,
+       2,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       2,
+       18
+      ],
+      "to": [
+       18,
+       2,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       2,
+       19
+      ],
+      "to": [
+       17,
+       2,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       2,
+       20
+      ],
+      "to": [
+       16,
+       2,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       3,
+       3
+      ],
+      "to": [
+       15,
+       3,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       3,
+       4
+      ],
+      "to": [
+       16,
+       3,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       3,
+       8
+      ],
+      "to": [
+       20,
+       3,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       3,
+       9
+      ],
+      "to": [
+       21,
+       3,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       3,
+       16
+      ],
+      "to": [
+       20,
+       3,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       3,
+       17
+      ],
+      "to": [
+       16,
+       3,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       3,
+       21
+      ],
+      "to": [
+       15,
+       3,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       4,
+       4
+      ],
+      "to": [
+       15,
+       4,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       4,
+       5
+      ],
+      "to": [
+       16,
+       4,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       4,
+       8
+      ],
+      "to": [
+       19,
+       4,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       4,
+       9
+      ],
+      "to": [
+       20,
+       4,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       4,
+       16
+      ],
+      "to": [
+       19,
+       4,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       4,
+       17
+      ],
+      "to": [
+       16,
+       4,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       4,
+       20
+      ],
+      "to": [
+       15,
+       4,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       5,
+       5
+      ],
+      "to": [
+       15,
+       8,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       6
+      ],
+      "to": [
+       16,
+       8,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       5,
+       8
+      ],
+      "to": [
+       18,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       5,
+       9
+      ],
+      "to": [
+       19,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       5,
+       16
+      ],
+      "to": [
+       18,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       5,
+       19
+      ],
+      "to": [
+       15,
+       8,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       6
+      ],
+      "to": [
+       15,
+       9,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       7
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       9,
+       8
+      ],
+      "to": [
+       17,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       9,
+       9
+      ],
+      "to": [
+       18,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       9,
+       16
+      ],
+      "to": [
+       17,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       18
+      ],
+      "to": [
+       15,
+       9,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       10,
+       7
+      ],
+      "to": [
+       13,
+       16,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       8
+      ],
+      "to": [
+       15,
+       16,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       9
+      ],
+      "to": [
+       16,
+       16,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       10,
+       11
+      ],
+      "to": [
+       17,
+       16,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       14
+      ],
+      "to": [
+       16,
+       16,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       16
+      ],
+      "to": [
+       15,
+       16,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       10,
+       17
+      ],
+      "to": [
+       13,
+       16,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       5
+      ],
+      "to": [
+       15,
+       17,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       17,
+       6
+      ],
+      "to": [
+       16,
+       17,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       17,
+       8
+      ],
+      "to": [
+       18,
+       17,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       17,
+       9
+      ],
+      "to": [
+       19,
+       17,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       17,
+       16
+      ],
+      "to": [
+       18,
+       17,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       17,
+       17
+      ],
+      "to": [
+       16,
+       17,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       17,
+       19
+      ],
+      "to": [
+       15,
+       17,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       18,
+       7
+      ],
+      "to": [
+       13,
+       19,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       18,
+       8
+      ],
+      "to": [
+       15,
+       19,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       18,
+       9
+      ],
+      "to": [
+       16,
+       19,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       18,
+       11
+      ],
+      "to": [
+       17,
+       19,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       18,
+       14
+      ],
+      "to": [
+       16,
+       19,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       18,
+       16
+      ],
+      "to": [
+       15,
+       19,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       18,
+       17
+      ],
+      "to": [
+       13,
+       19,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       20,
+       6
+      ],
+      "to": [
+       15,
+       20,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       20,
+       7
+      ],
+      "to": [
+       16,
+       20,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       20,
+       8
+      ],
+      "to": [
+       17,
+       20,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       20,
+       9
+      ],
+      "to": [
+       18,
+       20,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       20,
+       16
+      ],
+      "to": [
+       17,
+       20,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       20,
+       17
+      ],
+      "to": [
+       16,
+       20,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       20,
+       18
+      ],
+      "to": [
+       15,
+       20,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       21,
+       5
+      ],
+      "to": [
+       15,
+       21,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       21,
+       6
+      ],
+      "to": [
+       16,
+       23,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       21,
+       8
+      ],
+      "to": [
+       18,
+       23,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       21,
+       9
+      ],
+      "to": [
+       19,
+       23,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       21,
+       16
+      ],
+      "to": [
+       18,
+       23,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       21,
+       17
+      ],
+      "to": [
+       16,
+       23,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       21,
+       19
+      ],
+      "to": [
+       15,
+       23,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       22,
+       5
+      ],
+      "to": [
+       11,
+       22,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       22,
+       5
+      ],
+      "to": [
+       12,
+       22,
+       5
+      ],
+      "material": "wood",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       13,
+       22,
+       5
+      ],
+      "to": [
+       15,
+       22,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       23,
+       5
+      ],
+      "to": [
+       15,
+       23,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       24,
+       6
+      ],
+      "to": [
+       15,
+       24,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       24,
+       7
+      ],
+      "to": [
+       16,
+       24,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       24,
+       8
+      ],
+      "to": [
+       17,
+       24,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       24,
+       9
+      ],
+      "to": [
+       18,
+       24,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       24,
+       16
+      ],
+      "to": [
+       17,
+       24,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       24,
+       17
+      ],
+      "to": [
+       16,
+       24,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       24,
+       18
+      ],
+      "to": [
+       15,
+       24,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       25,
+       7
+      ],
+      "to": [
+       13,
+       25,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       25,
+       8
+      ],
+      "to": [
+       15,
+       25,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       25,
+       9
+      ],
+      "to": [
+       16,
+       25,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       25,
+       11
+      ],
+      "to": [
+       17,
+       25,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       25,
+       14
+      ],
+      "to": [
+       16,
+       25,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       25,
+       16
+      ],
+      "to": [
+       15,
+       25,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       25,
+       17
+      ],
+      "to": [
+       13,
+       25,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       26,
+       8
+      ],
+      "to": [
+       14,
+       26,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       26,
+       9
+      ],
+      "to": [
+       15,
+       26,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       26,
+       10
+      ],
+      "to": [
+       16,
+       26,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       26,
+       15
+      ],
+      "to": [
+       15,
+       26,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       26,
+       16
+      ],
+      "to": [
+       14,
+       26,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       27,
+       9
+      ],
+      "to": [
+       13,
+       27,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       27,
+       10
+      ],
+      "to": [
+       14,
+       27,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       27,
+       11
+      ],
+      "to": [
+       15,
+       27,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       27,
+       14
+      ],
+      "to": [
+       14,
+       27,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       27,
+       15
+      ],
+      "to": [
+       13,
+       27,
+       15
+      ],
+      "material": "wood"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
     },
-    "rook": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
-          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
-          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
-          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
-          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
-          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
-          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
-          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
-          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [3, 6, 5], "to": [11, 12, 9], "material": "wood"},
-          {"from": [5, 6, 3], "to": [9, 12, 11], "material": "wood"},
-          {"from": [4, 6, 4], "to": [10, 12, 10], "material": "wood"},
-          {"from": [2, 13, 5], "to": [12, 13, 9], "material": "trim"},
-          {"from": [5, 13, 2], "to": [9, 13, 12], "material": "trim"},
-          {"from": [4, 13, 4], "to": [10, 13, 10], "material": "trim"},
-          {"from": [1, 14, 4], "to": [13, 16, 10], "material": "wood"},
-          {"from": [4, 14, 1], "to": [10, 16, 13], "material": "wood"},
-          {"from": [3, 14, 3], "to": [11, 16, 11], "material": "wood"},
-          {"from": [1, 17, 4], "to": [13, 17, 10], "material": "trim"},
-          {"from": [4, 17, 1], "to": [10, 17, 13], "material": "trim"},
-          {"from": [3, 17, 3], "to": [11, 17, 11], "material": "trim"},
-          {"from": [1, 18, 4], "to": [13, 18, 10], "material": "wood"},
-          {"from": [4, 18, 1], "to": [10, 18, 13], "material": "wood"},
-          {"from": [3, 18, 3], "to": [11, 18, 11], "material": "wood"},
-          {"from": [1, 19, 1], "to": [3, 22, 3], "material": "wood"},
-          {"from": [6, 19, 1], "to": [8, 22, 3], "material": "wood"},
-          {"from": [11, 19, 1], "to": [13, 22, 3], "material": "wood"},
-          {"from": [1, 19, 6], "to": [3, 22, 8], "material": "wood"},
-          {"from": [11, 19, 6], "to": [13, 22, 8], "material": "wood"},
-          {"from": [1, 19, 11], "to": [3, 22, 13], "material": "wood"},
-          {"from": [6, 19, 11], "to": [8, 22, 13], "material": "wood"},
-          {"from": [11, 19, 11], "to": [13, 22, 13], "material": "wood"},
-          {"from": [7, 9, 3], "to": [7, 9, 3], "material": "wood", "beam_emitter": true}
-        ]
-      },
-      "colors": {
-        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
-    },
-    "bishop": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
-          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
-          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
-          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
-          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
-          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
-          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
-          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
-          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
-          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
-          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
-          {"from": [4, 10, 6], "to": [10, 13, 8], "material": "wood"},
-          {"from": [6, 10, 4], "to": [8, 13, 10], "material": "wood"},
-          {"from": [5, 10, 5], "to": [9, 13, 9], "material": "wood"},
-          {"from": [2, 14, 5], "to": [12, 14, 9], "material": "trim"},
-          {"from": [5, 14, 2], "to": [9, 14, 12], "material": "trim"},
-          {"from": [4, 14, 4], "to": [10, 14, 10], "material": "trim"},
-          {"from": [2, 15, 5], "to": [12, 18, 9], "material": "wood"},
-          {"from": [5, 15, 2], "to": [9, 18, 12], "material": "wood"},
-          {"from": [4, 15, 4], "to": [10, 18, 10], "material": "wood"},
-          {"from": [3, 19, 5], "to": [11, 21, 9], "material": "wood"},
-          {"from": [5, 19, 3], "to": [9, 21, 11], "material": "wood"},
-          {"from": [4, 19, 4], "to": [10, 21, 10], "material": "wood"},
-          {"from": [4, 22, 6], "to": [10, 23, 8], "material": "wood"},
-          {"from": [6, 22, 4], "to": [8, 23, 10], "material": "wood"},
-          {"from": [5, 22, 5], "to": [9, 23, 9], "material": "wood"},
-          {"from": [5, 24, 6], "to": [9, 25, 8], "material": "wood"},
-          {"from": [6, 24, 5], "to": [8, 25, 9], "material": "wood"},
-          {"from": [6, 24, 6], "to": [8, 25, 8], "material": "wood"},
-          {"from": [6, 26, 6], "to": [8, 26, 8], "material": "wood"},
-          {"from": [6, 27, 6], "to": [8, 28, 8], "material": "trim"},
-          {"from": [5, 15, 2], "to": [5, 15, 2], "material": "trim"},
-          {"from": [6, 15, 2], "to": [6, 15, 2], "material": "trim"},
-          {"from": [6, 16, 2], "to": [6, 16, 2], "material": "trim"},
-          {"from": [7, 16, 2], "to": [7, 16, 2], "material": "trim"},
-          {"from": [7, 17, 2], "to": [7, 17, 2], "material": "trim", "beam_emitter": true},
-          {"from": [8, 17, 2], "to": [8, 17, 2], "material": "trim"},
-          {"from": [8, 18, 2], "to": [8, 18, 2], "material": "trim"},
-          {"from": [9, 18, 2], "to": [9, 18, 2], "material": "trim"},
-          {"from": [9, 19, 3], "to": [9, 19, 3], "material": "trim"}
-        ]
-      },
-      "colors": {
-        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
-    },
-    "knight": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
-          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
-          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
-          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
-          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
-          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
-          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
-          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
-          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [4, 6, 2], "to": [10, 11, 11], "material": "wood"},
-          {"from": [4, 12, 5], "to": [10, 17, 11], "material": "wood"},
-          {"from": [4, 18, 4], "to": [10, 22, 11], "material": "wood"},
-          {"from": [5, 19, 2], "to": [9, 25, 8], "material": "wood"},
-          {"from": [6, 17, 0], "to": [8, 22, 3], "material": "wood"},
-          {"from": [6, 18, 0], "to": [6, 18, 0], "material": "ink"},
-          {"from": [8, 18, 0], "to": [8, 18, 0], "material": "ink"},
-          {"from": [5, 23, 4], "to": [5, 23, 4], "material": "ink"},
-          {"from": [9, 23, 4], "to": [9, 23, 4], "material": "ink"},
-          {"from": [5, 26, 6], "to": [6, 28, 7], "material": "wood"},
-          {"from": [8, 26, 6], "to": [9, 28, 7], "material": "wood"},
-          {"from": [6, 12, 12], "to": [8, 22, 13], "material": "trim"},
-          {"from": [6, 23, 9], "to": [8, 26, 12], "material": "trim"},
-          {"from": [7, 23, 2], "to": [7, 23, 2], "material": "wood", "beam_emitter": true}
-        ]
-      },
-      "colors": {
-        "white": {"ink": [40, 34, 32], "trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"ink": [215, 205, 185], "trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
-    },
-    "queen": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
-          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
-          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
-          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
-          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
-          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
-          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
-          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
-          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
-          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
-          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
-          {"from": [4, 10, 6], "to": [10, 18, 8], "material": "wood"},
-          {"from": [6, 10, 4], "to": [8, 18, 10], "material": "wood"},
-          {"from": [5, 10, 5], "to": [9, 18, 9], "material": "wood"},
-          {"from": [2, 19, 5], "to": [12, 19, 9], "material": "trim"},
-          {"from": [5, 19, 2], "to": [9, 19, 12], "material": "trim"},
-          {"from": [4, 19, 4], "to": [10, 19, 10], "material": "trim"},
-          {"from": [3, 20, 5], "to": [11, 20, 9], "material": "trim"},
-          {"from": [5, 20, 3], "to": [9, 20, 11], "material": "trim"},
-          {"from": [4, 20, 4], "to": [10, 20, 10], "material": "trim"},
-          {"from": [2, 21, 5], "to": [12, 23, 9], "material": "wood"},
-          {"from": [5, 21, 2], "to": [9, 23, 12], "material": "wood"},
-          {"from": [4, 21, 4], "to": [10, 23, 10], "material": "wood"},
-          {"from": [2, 24, 5], "to": [12, 24, 9], "material": "trim"},
-          {"from": [5, 24, 2], "to": [9, 24, 12], "material": "trim"},
-          {"from": [4, 24, 4], "to": [10, 24, 10], "material": "trim"},
-          {"from": [3, 25, 5], "to": [11, 26, 9], "material": "wood"},
-          {"from": [5, 25, 3], "to": [9, 26, 11], "material": "wood"},
-          {"from": [4, 25, 4], "to": [10, 26, 10], "material": "wood"},
-          {"from": [3, 27, 5], "to": [11, 27, 9], "material": "trim"},
-          {"from": [5, 27, 3], "to": [9, 27, 11], "material": "trim"},
-          {"from": [4, 27, 4], "to": [10, 27, 10], "material": "trim"},
-          {"from": [5, 28, 6], "to": [9, 30, 8], "material": "wood"},
-          {"from": [6, 28, 5], "to": [8, 30, 9], "material": "wood"},
-          {"from": [6, 28, 6], "to": [8, 30, 8], "material": "wood"},
-          {"from": [6, 31, 6], "to": [8, 31, 8], "material": "wood"},
-          {"from": [11, 28, 7], "to": [11, 29, 7], "material": "wood"},
-          {"from": [11, 30, 7], "to": [11, 30, 7], "material": "trim", "beam_emitter": true},
-          {"from": [3, 28, 7], "to": [3, 29, 7], "material": "wood"},
-          {"from": [3, 30, 7], "to": [3, 30, 7], "material": "trim", "beam_emitter": true},
-          {"from": [7, 28, 11], "to": [7, 29, 11], "material": "wood"},
-          {"from": [7, 30, 11], "to": [7, 30, 11], "material": "trim", "beam_emitter": true},
-          {"from": [7, 28, 3], "to": [7, 29, 3], "material": "wood"},
-          {"from": [7, 30, 3], "to": [7, 30, 3], "material": "trim", "beam_emitter": true},
-          {"from": [10, 28, 10], "to": [10, 29, 10], "material": "wood"},
-          {"from": [10, 30, 10], "to": [10, 30, 10], "material": "trim", "beam_emitter": true},
-          {"from": [10, 28, 4], "to": [10, 29, 4], "material": "wood"},
-          {"from": [10, 30, 4], "to": [10, 30, 4], "material": "trim", "beam_emitter": true},
-          {"from": [4, 28, 10], "to": [4, 29, 10], "material": "wood"},
-          {"from": [4, 30, 10], "to": [4, 30, 10], "material": "trim", "beam_emitter": true},
-          {"from": [4, 28, 4], "to": [4, 29, 4], "material": "wood"},
-          {"from": [4, 30, 4], "to": [4, 30, 4], "material": "trim", "beam_emitter": true}
-        ]
-      },
-      "colors": {
-        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
-    },
-    "king": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 4], "to": [14, 2, 10], "material": "wood"},
-          {"from": [4, 0, 0], "to": [10, 2, 14], "material": "wood"},
-          {"from": [2, 0, 2], "to": [12, 2, 12], "material": "wood"},
-          {"from": [1, 3, 4], "to": [13, 3, 10], "material": "trim"},
-          {"from": [4, 3, 1], "to": [10, 3, 13], "material": "trim"},
-          {"from": [3, 3, 3], "to": [11, 3, 11], "material": "trim"},
-          {"from": [2, 4, 5], "to": [12, 5, 9], "material": "wood"},
-          {"from": [5, 4, 2], "to": [9, 5, 12], "material": "wood"},
-          {"from": [4, 4, 4], "to": [10, 5, 10], "material": "wood"},
-          {"from": [3, 6, 5], "to": [11, 9, 9], "material": "wood"},
-          {"from": [5, 6, 3], "to": [9, 9, 11], "material": "wood"},
-          {"from": [4, 6, 4], "to": [10, 9, 10], "material": "wood"},
-          {"from": [4, 10, 6], "to": [10, 17, 8], "material": "wood"},
-          {"from": [6, 10, 4], "to": [8, 17, 10], "material": "wood"},
-          {"from": [5, 10, 5], "to": [9, 17, 9], "material": "wood"},
-          {"from": [2, 18, 5], "to": [12, 18, 9], "material": "trim"},
-          {"from": [5, 18, 2], "to": [9, 18, 12], "material": "trim"},
-          {"from": [4, 18, 4], "to": [10, 18, 10], "material": "trim"},
-          {"from": [3, 19, 5], "to": [11, 19, 9], "material": "trim"},
-          {"from": [5, 19, 3], "to": [9, 19, 11], "material": "trim"},
-          {"from": [4, 19, 4], "to": [10, 19, 10], "material": "trim"},
-          {"from": [2, 20, 5], "to": [12, 23, 9], "material": "wood"},
-          {"from": [5, 20, 2], "to": [9, 23, 12], "material": "wood"},
-          {"from": [4, 20, 4], "to": [10, 23, 10], "material": "wood"},
-          {"from": [2, 24, 5], "to": [12, 24, 9], "material": "trim"},
-          {"from": [5, 24, 2], "to": [9, 24, 12], "material": "trim"},
-          {"from": [4, 24, 4], "to": [10, 24, 10], "material": "trim"},
-          {"from": [3, 25, 5], "to": [11, 26, 9], "material": "wood"},
-          {"from": [5, 25, 3], "to": [9, 26, 11], "material": "wood"},
-          {"from": [4, 25, 4], "to": [10, 26, 10], "material": "wood"},
-          {"from": [3, 27, 5], "to": [11, 27, 9], "material": "trim"},
-          {"from": [5, 27, 3], "to": [9, 27, 11], "material": "trim"},
-          {"from": [4, 27, 4], "to": [10, 27, 10], "material": "trim"},
-          {"from": [4, 28, 6], "to": [10, 28, 8], "material": "wood"},
-          {"from": [6, 28, 4], "to": [8, 28, 10], "material": "wood"},
-          {"from": [5, 28, 5], "to": [9, 28, 9], "material": "wood"},
-          {"from": [5, 29, 6], "to": [9, 29, 8], "material": "wood"},
-          {"from": [6, 29, 5], "to": [8, 29, 9], "material": "wood"},
-          {"from": [6, 29, 6], "to": [8, 29, 8], "material": "wood"},
-          {"from": [6, 30, 6], "to": [8, 36, 8], "material": "trim"},
-          {"from": [3, 33, 6], "to": [11, 34, 8], "material": "trim"},
-          {"from": [7, 21, 2], "to": [7, 21, 2], "material": "wood", "beam_emitter": true}
-        ]
-      },
-      "colors": {
-        "white": {"trim": [205, 186, 146], "wood": [240, 232, 212]},
-        "black": {"trim": [92, 80, 72], "wood": [46, 42, 44]}
-      }
-    },
-    "board": {
-      "model": {
-        "width": 15,
-        "boxes": [
-          {"from": [0, 0, 0], "to": [14, 0, 14], "material": "sq"},
-          {"from": [2, 0, 3], "to": [5, 0, 3], "material": "grain"},
-          {"from": [9, 0, 1], "to": [11, 0, 1], "material": "grain"},
-          {"from": [5, 0, 7], "to": [9, 0, 7], "material": "grain"},
-          {"from": [1, 0, 10], "to": [3, 0, 10], "material": "grain"},
-          {"from": [8, 0, 12], "to": [11, 0, 12], "material": "grain"},
-          {"from": [11, 0, 6], "to": [13, 0, 6], "material": "grain"}
-        ]
-      },
-      "colors": {
-        "white": {"sq": [240, 217, 181], "grain": [228, 203, 165]},
-        "black": {"sq": [181, 136, 99], "grain": [165, 121, 86]}
-      }
+    "black": {
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
     }
+   }
+  },
+  "rook": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       1
+      ],
+      "to": [
+       16,
+       0,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       3
+      ],
+      "to": [
+       17,
+       0,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       4
+      ],
+      "to": [
+       20,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       7
+      ],
+      "to": [
+       21,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       0,
+       8
+      ],
+      "to": [
+       23,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       17
+      ],
+      "to": [
+       21,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       18
+      ],
+      "to": [
+       20,
+       0,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       21
+      ],
+      "to": [
+       17,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       22
+      ],
+      "to": [
+       16,
+       0,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       0
+      ],
+      "to": [
+       16,
+       3,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       1
+      ],
+      "to": [
+       17,
+       3,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       3
+      ],
+      "to": [
+       20,
+       3,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       4
+      ],
+      "to": [
+       21,
+       3,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       7
+      ],
+      "to": [
+       23,
+       3,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       0,
+       1,
+       8
+      ],
+      "to": [
+       24,
+       3,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       17
+      ],
+      "to": [
+       23,
+       3,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       18
+      ],
+      "to": [
+       21,
+       3,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       21
+      ],
+      "to": [
+       20,
+       3,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       22
+      ],
+      "to": [
+       17,
+       3,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       24
+      ],
+      "to": [
+       16,
+       3,
+       24
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       1
+      ],
+      "to": [
+       16,
+       4,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       2
+      ],
+      "to": [
+       17,
+       4,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       4
+      ],
+      "to": [
+       20,
+       4,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       7
+      ],
+      "to": [
+       22,
+       4,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       4,
+       8
+      ],
+      "to": [
+       23,
+       4,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       17
+      ],
+      "to": [
+       22,
+       4,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       18
+      ],
+      "to": [
+       20,
+       4,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       21
+      ],
+      "to": [
+       17,
+       4,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       23
+      ],
+      "to": [
+       16,
+       4,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       2
+      ],
+      "to": [
+       16,
+       5,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       3
+      ],
+      "to": [
+       17,
+       5,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       5
+      ],
+      "to": [
+       18,
+       5,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       6
+      ],
+      "to": [
+       19,
+       5,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       7
+      ],
+      "to": [
+       21,
+       5,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       5,
+       8
+      ],
+      "to": [
+       22,
+       5,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       17
+      ],
+      "to": [
+       21,
+       5,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       18
+      ],
+      "to": [
+       19,
+       5,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       19
+      ],
+      "to": [
+       18,
+       5,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       20
+      ],
+      "to": [
+       17,
+       5,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       5,
+       22
+      ],
+      "to": [
+       16,
+       5,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       3
+      ],
+      "to": [
+       16,
+       6,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       5
+      ],
+      "to": [
+       17,
+       6,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       6
+      ],
+      "to": [
+       18,
+       6,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       7
+      ],
+      "to": [
+       19,
+       6,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       6,
+       8
+      ],
+      "to": [
+       21,
+       6,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       17
+      ],
+      "to": [
+       19,
+       6,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       18
+      ],
+      "to": [
+       18,
+       6,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       19
+      ],
+      "to": [
+       17,
+       6,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       20
+      ],
+      "to": [
+       16,
+       6,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       7,
+       3
+      ],
+      "to": [
+       15,
+       8,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       4
+      ],
+      "to": [
+       16,
+       8,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       8
+      ],
+      "to": [
+       20,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       7,
+       9
+      ],
+      "to": [
+       21,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       16
+      ],
+      "to": [
+       20,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       7,
+       21
+      ],
+      "to": [
+       15,
+       8,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       4
+      ],
+      "to": [
+       15,
+       9,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       5
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       8
+      ],
+      "to": [
+       19,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       9,
+       9
+      ],
+      "to": [
+       20,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       16
+      ],
+      "to": [
+       19,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       20
+      ],
+      "to": [
+       15,
+       9,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       5
+      ],
+      "to": [
+       15,
+       15,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       6
+      ],
+      "to": [
+       16,
+       21,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       8
+      ],
+      "to": [
+       18,
+       21,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       10,
+       9
+      ],
+      "to": [
+       19,
+       21,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       16
+      ],
+      "to": [
+       18,
+       21,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       17
+      ],
+      "to": [
+       16,
+       21,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       19
+      ],
+      "to": [
+       15,
+       21,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       5
+      ],
+      "to": [
+       11,
+       16,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       16,
+       5
+      ],
+      "to": [
+       12,
+       16,
+       5
+      ],
+      "material": "wood",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       13,
+       16,
+       5
+      ],
+      "to": [
+       15,
+       16,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       5
+      ],
+      "to": [
+       15,
+       21,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       22,
+       4
+      ],
+      "to": [
+       15,
+       22,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       22,
+       5
+      ],
+      "to": [
+       16,
+       22,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       22,
+       8
+      ],
+      "to": [
+       19,
+       22,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       22,
+       9
+      ],
+      "to": [
+       20,
+       22,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       22,
+       16
+      ],
+      "to": [
+       19,
+       22,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       22,
+       17
+      ],
+      "to": [
+       16,
+       22,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       22,
+       20
+      ],
+      "to": [
+       15,
+       22,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       23,
+       3
+      ],
+      "to": [
+       16,
+       23,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       23,
+       5
+      ],
+      "to": [
+       17,
+       23,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       23,
+       6
+      ],
+      "to": [
+       18,
+       23,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       23,
+       7
+      ],
+      "to": [
+       19,
+       23,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       23,
+       8
+      ],
+      "to": [
+       21,
+       23,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       23,
+       17
+      ],
+      "to": [
+       19,
+       23,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       23,
+       18
+      ],
+      "to": [
+       18,
+       23,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       23,
+       19
+      ],
+      "to": [
+       17,
+       23,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       23,
+       20
+      ],
+      "to": [
+       16,
+       23,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       24,
+       2
+      ],
+      "to": [
+       16,
+       27,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       24,
+       3
+      ],
+      "to": [
+       17,
+       27,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       24,
+       5
+      ],
+      "to": [
+       18,
+       27,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       24,
+       6
+      ],
+      "to": [
+       19,
+       27,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       24,
+       7
+      ],
+      "to": [
+       21,
+       27,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       24,
+       8
+      ],
+      "to": [
+       22,
+       27,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       24,
+       17
+      ],
+      "to": [
+       21,
+       27,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       24,
+       18
+      ],
+      "to": [
+       19,
+       27,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       24,
+       19
+      ],
+      "to": [
+       18,
+       27,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       24,
+       20
+      ],
+      "to": [
+       17,
+       27,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       24,
+       22
+      ],
+      "to": [
+       16,
+       27,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       28,
+       2
+      ],
+      "to": [
+       16,
+       29,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       28,
+       3
+      ],
+      "to": [
+       17,
+       29,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       28,
+       5
+      ],
+      "to": [
+       18,
+       29,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       28,
+       6
+      ],
+      "to": [
+       19,
+       29,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       28,
+       7
+      ],
+      "to": [
+       21,
+       29,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       28,
+       8
+      ],
+      "to": [
+       22,
+       29,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       28,
+       17
+      ],
+      "to": [
+       21,
+       29,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       28,
+       18
+      ],
+      "to": [
+       19,
+       29,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       28,
+       19
+      ],
+      "to": [
+       18,
+       29,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       28,
+       20
+      ],
+      "to": [
+       17,
+       29,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       28,
+       22
+      ],
+      "to": [
+       16,
+       29,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       30,
+       2
+      ],
+      "to": [
+       16,
+       30,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       30,
+       3
+      ],
+      "to": [
+       17,
+       30,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       30,
+       5
+      ],
+      "to": [
+       18,
+       31,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       30,
+       6
+      ],
+      "to": [
+       19,
+       30,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       30,
+       7
+      ],
+      "to": [
+       21,
+       30,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       30,
+       8
+      ],
+      "to": [
+       22,
+       30,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       30,
+       17
+      ],
+      "to": [
+       21,
+       30,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       30,
+       18
+      ],
+      "to": [
+       19,
+       30,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       30,
+       19
+      ],
+      "to": [
+       18,
+       31,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       30,
+       20
+      ],
+      "to": [
+       17,
+       30,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       30,
+       22
+      ],
+      "to": [
+       16,
+       30,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       31,
+       2
+      ],
+      "to": [
+       14,
+       31,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       31,
+       3
+      ],
+      "to": [
+       16,
+       31,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       31,
+       6
+      ],
+      "to": [
+       19,
+       31,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       31,
+       8
+      ],
+      "to": [
+       21,
+       31,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       31,
+       10
+      ],
+      "to": [
+       22,
+       31,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       31,
+       15
+      ],
+      "to": [
+       21,
+       31,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       31,
+       17
+      ],
+      "to": [
+       19,
+       31,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       31,
+       20
+      ],
+      "to": [
+       16,
+       31,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       31,
+       22
+      ],
+      "to": [
+       14,
+       31,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       32,
+       2
+      ],
+      "to": [
+       13,
+       36,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       3
+      ],
+      "to": [
+       5,
+       32,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       32,
+       3
+      ],
+      "to": [
+       14,
+       36,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       3
+      ],
+      "to": [
+       21,
+       32,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       5
+      ],
+      "to": [
+       6,
+       32,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       32,
+       5
+      ],
+      "to": [
+       21,
+       32,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       32,
+       6
+      ],
+      "to": [
+       5,
+       32,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       32,
+       6
+      ],
+      "to": [
+       13,
+       36,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       6
+      ],
+      "to": [
+       19,
+       32,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       10
+      ],
+      "to": [
+       5,
+       36,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       10
+      ],
+      "to": [
+       21,
+       36,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       32,
+       11
+      ],
+      "to": [
+       6,
+       36,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       32,
+       11
+      ],
+      "to": [
+       22,
+       36,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       14
+      ],
+      "to": [
+       5,
+       36,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       14
+      ],
+      "to": [
+       21,
+       36,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       32,
+       18
+      ],
+      "to": [
+       5,
+       32,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       32,
+       18
+      ],
+      "to": [
+       13,
+       36,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       18
+      ],
+      "to": [
+       19,
+       32,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       19
+      ],
+      "to": [
+       6,
+       32,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       32,
+       19
+      ],
+      "to": [
+       14,
+       36,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       32,
+       19
+      ],
+      "to": [
+       21,
+       32,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       32,
+       20
+      ],
+      "to": [
+       5,
+       32,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       32,
+       20
+      ],
+      "to": [
+       21,
+       32,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       32,
+       22
+      ],
+      "to": [
+       13,
+       36,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       33,
+       2
+      ],
+      "to": [
+       5,
+       36,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       33,
+       2
+      ],
+      "to": [
+       21,
+       36,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       33,
+       3
+      ],
+      "to": [
+       6,
+       36,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       33,
+       3
+      ],
+      "to": [
+       22,
+       36,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       33,
+       6
+      ],
+      "to": [
+       5,
+       36,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       33,
+       6
+      ],
+      "to": [
+       21,
+       36,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       33,
+       18
+      ],
+      "to": [
+       5,
+       36,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       33,
+       18
+      ],
+      "to": [
+       21,
+       36,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       33,
+       19
+      ],
+      "to": [
+       6,
+       36,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       33,
+       19
+      ],
+      "to": [
+       22,
+       36,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       33,
+       22
+      ],
+      "to": [
+       5,
+       36,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       33,
+       22
+      ],
+      "to": [
+       21,
+       36,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       37,
+       3
+      ],
+      "to": [
+       5,
+       37,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       37,
+       3
+      ],
+      "to": [
+       13,
+       37,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       37,
+       3
+      ],
+      "to": [
+       21,
+       37,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       37,
+       11
+      ],
+      "to": [
+       5,
+       37,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       37,
+       11
+      ],
+      "to": [
+       21,
+       37,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       37,
+       19
+      ],
+      "to": [
+       5,
+       37,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       37,
+       19
+      ],
+      "to": [
+       13,
+       37,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       19,
+       37,
+       19
+      ],
+      "to": [
+       21,
+       37,
+       21
+      ],
+      "material": "wood"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
+    },
+    "black": {
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
+    }
+   }
+  },
+  "bishop": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       1
+      ],
+      "to": [
+       16,
+       0,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       3
+      ],
+      "to": [
+       17,
+       0,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       4
+      ],
+      "to": [
+       20,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       7
+      ],
+      "to": [
+       21,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       0,
+       8
+      ],
+      "to": [
+       23,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       17
+      ],
+      "to": [
+       21,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       18
+      ],
+      "to": [
+       20,
+       0,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       21
+      ],
+      "to": [
+       17,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       22
+      ],
+      "to": [
+       16,
+       0,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       0
+      ],
+      "to": [
+       16,
+       3,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       1
+      ],
+      "to": [
+       17,
+       3,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       3
+      ],
+      "to": [
+       20,
+       3,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       4
+      ],
+      "to": [
+       21,
+       3,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       7
+      ],
+      "to": [
+       23,
+       3,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       0,
+       1,
+       8
+      ],
+      "to": [
+       24,
+       3,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       17
+      ],
+      "to": [
+       23,
+       3,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       18
+      ],
+      "to": [
+       21,
+       3,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       21
+      ],
+      "to": [
+       20,
+       3,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       22
+      ],
+      "to": [
+       17,
+       3,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       24
+      ],
+      "to": [
+       16,
+       3,
+       24
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       1
+      ],
+      "to": [
+       16,
+       4,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       2
+      ],
+      "to": [
+       17,
+       4,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       4
+      ],
+      "to": [
+       20,
+       4,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       7
+      ],
+      "to": [
+       22,
+       4,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       4,
+       8
+      ],
+      "to": [
+       23,
+       4,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       17
+      ],
+      "to": [
+       22,
+       4,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       18
+      ],
+      "to": [
+       20,
+       4,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       21
+      ],
+      "to": [
+       17,
+       4,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       23
+      ],
+      "to": [
+       16,
+       4,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       2
+      ],
+      "to": [
+       16,
+       5,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       3
+      ],
+      "to": [
+       17,
+       5,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       5
+      ],
+      "to": [
+       18,
+       5,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       6
+      ],
+      "to": [
+       19,
+       5,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       7
+      ],
+      "to": [
+       21,
+       5,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       5,
+       8
+      ],
+      "to": [
+       22,
+       5,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       17
+      ],
+      "to": [
+       21,
+       5,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       18
+      ],
+      "to": [
+       19,
+       5,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       19
+      ],
+      "to": [
+       18,
+       5,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       20
+      ],
+      "to": [
+       17,
+       5,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       5,
+       22
+      ],
+      "to": [
+       16,
+       5,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       3
+      ],
+      "to": [
+       16,
+       6,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       5
+      ],
+      "to": [
+       17,
+       6,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       6
+      ],
+      "to": [
+       18,
+       6,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       7
+      ],
+      "to": [
+       19,
+       6,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       6,
+       8
+      ],
+      "to": [
+       21,
+       6,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       17
+      ],
+      "to": [
+       19,
+       6,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       18
+      ],
+      "to": [
+       18,
+       6,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       19
+      ],
+      "to": [
+       17,
+       6,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       20
+      ],
+      "to": [
+       16,
+       6,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       7,
+       3
+      ],
+      "to": [
+       15,
+       8,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       4
+      ],
+      "to": [
+       16,
+       8,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       8
+      ],
+      "to": [
+       20,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       7,
+       9
+      ],
+      "to": [
+       21,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       16
+      ],
+      "to": [
+       20,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       7,
+       21
+      ],
+      "to": [
+       15,
+       8,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       4
+      ],
+      "to": [
+       15,
+       9,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       5
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       8
+      ],
+      "to": [
+       19,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       9,
+       9
+      ],
+      "to": [
+       20,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       16
+      ],
+      "to": [
+       19,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       20
+      ],
+      "to": [
+       15,
+       9,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       5
+      ],
+      "to": [
+       15,
+       15,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       6
+      ],
+      "to": [
+       16,
+       15,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       8
+      ],
+      "to": [
+       18,
+       15,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       10,
+       9
+      ],
+      "to": [
+       19,
+       15,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       16
+      ],
+      "to": [
+       18,
+       15,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       17
+      ],
+      "to": [
+       16,
+       15,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       19
+      ],
+      "to": [
+       15,
+       15,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       6
+      ],
+      "to": [
+       15,
+       16,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       7
+      ],
+      "to": [
+       16,
+       16,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       8
+      ],
+      "to": [
+       17,
+       16,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       16,
+       9
+      ],
+      "to": [
+       18,
+       16,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       16
+      ],
+      "to": [
+       17,
+       16,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       17
+      ],
+      "to": [
+       16,
+       16,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       18
+      ],
+      "to": [
+       15,
+       16,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       7
+      ],
+      "to": [
+       13,
+       22,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       8
+      ],
+      "to": [
+       15,
+       22,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       9
+      ],
+      "to": [
+       16,
+       22,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       17,
+       11
+      ],
+      "to": [
+       17,
+       22,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       14
+      ],
+      "to": [
+       16,
+       22,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       16
+      ],
+      "to": [
+       15,
+       22,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       17
+      ],
+      "to": [
+       13,
+       22,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       23,
+       4
+      ],
+      "to": [
+       15,
+       23,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       23,
+       7
+      ],
+      "to": [
+       16,
+       23,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       23,
+       8
+      ],
+      "to": [
+       17,
+       23,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       23,
+       9
+      ],
+      "to": [
+       20,
+       23,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       23,
+       16
+      ],
+      "to": [
+       17,
+       23,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       23,
+       17
+      ],
+      "to": [
+       16,
+       23,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       23,
+       18
+      ],
+      "to": [
+       15,
+       23,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       24,
+       3
+      ],
+      "to": [
+       15,
+       24,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       24,
+       4
+      ],
+      "to": [
+       16,
+       24,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       24,
+       8
+      ],
+      "to": [
+       20,
+       24,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       24,
+       9
+      ],
+      "to": [
+       21,
+       24,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       24,
+       16
+      ],
+      "to": [
+       20,
+       24,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       24,
+       17
+      ],
+      "to": [
+       16,
+       24,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       24,
+       21
+      ],
+      "to": [
+       15,
+       24,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       25,
+       3
+      ],
+      "to": [
+       11,
+       26,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       12,
+       25,
+       3
+      ],
+      "to": [
+       15,
+       26,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       25,
+       4
+      ],
+      "to": [
+       11,
+       26,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       12,
+       25,
+       4
+      ],
+      "to": [
+       16,
+       26,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       25,
+       5
+      ],
+      "to": [
+       16,
+       31,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       25,
+       8
+      ],
+      "to": [
+       20,
+       30,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       25,
+       9
+      ],
+      "to": [
+       21,
+       30,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       25,
+       16
+      ],
+      "to": [
+       20,
+       30,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       25,
+       17
+      ],
+      "to": [
+       16,
+       30,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       25,
+       21
+      ],
+      "to": [
+       15,
+       30,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       27,
+       3
+      ],
+      "to": [
+       9,
+       27,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       27,
+       3
+      ],
+      "to": [
+       12,
+       27,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       13,
+       27,
+       3
+      ],
+      "to": [
+       15,
+       27,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       27,
+       4
+      ],
+      "to": [
+       9,
+       27,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       27,
+       4
+      ],
+      "to": [
+       16,
+       27,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       28,
+       3
+      ],
+      "to": [
+       12,
+       28,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       28,
+       3
+      ],
+      "to": [
+       14,
+       29,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       15,
+       28,
+       3
+      ],
+      "to": [
+       15,
+       29,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       28,
+       4
+      ],
+      "to": [
+       12,
+       30,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       15,
+       28,
+       4
+      ],
+      "to": [
+       16,
+       29,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       29,
+       3
+      ],
+      "to": [
+       11,
+       29,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       29,
+       3
+      ],
+      "to": [
+       12,
+       29,
+       3
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       9,
+       30,
+       3
+      ],
+      "to": [
+       12,
+       30,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       30,
+       3
+      ],
+      "to": [
+       15,
+       30,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       13,
+       30,
+       4
+      ],
+      "to": [
+       16,
+       30,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       31,
+       4
+      ],
+      "to": [
+       12,
+       31,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       31,
+       4
+      ],
+      "to": [
+       15,
+       31,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       31,
+       8
+      ],
+      "to": [
+       19,
+       31,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       31,
+       9
+      ],
+      "to": [
+       20,
+       31,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       31,
+       16
+      ],
+      "to": [
+       19,
+       31,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       31,
+       17
+      ],
+      "to": [
+       16,
+       31,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       31,
+       20
+      ],
+      "to": [
+       15,
+       31,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       32,
+       5
+      ],
+      "to": [
+       14,
+       32,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       15,
+       32,
+       5
+      ],
+      "to": [
+       15,
+       32,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       6
+      ],
+      "to": [
+       14,
+       32,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       15,
+       32,
+       6
+      ],
+      "to": [
+       16,
+       32,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       7
+      ],
+      "to": [
+       16,
+       32,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       32,
+       8
+      ],
+      "to": [
+       18,
+       35,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       32,
+       9
+      ],
+      "to": [
+       19,
+       35,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       32,
+       16
+      ],
+      "to": [
+       18,
+       35,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       32,
+       17
+      ],
+      "to": [
+       16,
+       35,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       32,
+       19
+      ],
+      "to": [
+       15,
+       35,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       33,
+       5
+      ],
+      "to": [
+       15,
+       35,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       33,
+       6
+      ],
+      "to": [
+       16,
+       35,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       36,
+       6
+      ],
+      "to": [
+       15,
+       36,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       36,
+       7
+      ],
+      "to": [
+       16,
+       36,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       36,
+       8
+      ],
+      "to": [
+       17,
+       36,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       36,
+       9
+      ],
+      "to": [
+       18,
+       36,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       36,
+       16
+      ],
+      "to": [
+       17,
+       36,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       36,
+       17
+      ],
+      "to": [
+       16,
+       36,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       36,
+       18
+      ],
+      "to": [
+       15,
+       36,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       37,
+       7
+      ],
+      "to": [
+       13,
+       38,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       37,
+       8
+      ],
+      "to": [
+       15,
+       38,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       37,
+       9
+      ],
+      "to": [
+       16,
+       38,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       37,
+       11
+      ],
+      "to": [
+       17,
+       38,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       37,
+       14
+      ],
+      "to": [
+       16,
+       38,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       37,
+       16
+      ],
+      "to": [
+       15,
+       38,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       37,
+       17
+      ],
+      "to": [
+       13,
+       38,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       39,
+       8
+      ],
+      "to": [
+       14,
+       39,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       39,
+       9
+      ],
+      "to": [
+       15,
+       39,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       39,
+       10
+      ],
+      "to": [
+       16,
+       39,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       39,
+       15
+      ],
+      "to": [
+       15,
+       39,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       39,
+       16
+      ],
+      "to": [
+       14,
+       39,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       40,
+       8
+      ],
+      "to": [
+       13,
+       41,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       40,
+       9
+      ],
+      "to": [
+       14,
+       41,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       40,
+       10
+      ],
+      "to": [
+       15,
+       41,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       40,
+       11
+      ],
+      "to": [
+       16,
+       41,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       40,
+       14
+      ],
+      "to": [
+       15,
+       41,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       40,
+       15
+      ],
+      "to": [
+       14,
+       41,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       40,
+       16
+      ],
+      "to": [
+       13,
+       41,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       42,
+       9
+      ],
+      "to": [
+       13,
+       42,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       42,
+       10
+      ],
+      "to": [
+       14,
+       42,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       42,
+       11
+      ],
+      "to": [
+       15,
+       42,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       42,
+       14
+      ],
+      "to": [
+       14,
+       42,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       42,
+       15
+      ],
+      "to": [
+       13,
+       42,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       43,
+       10
+      ],
+      "to": [
+       13,
+       44,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       43,
+       11
+      ],
+      "to": [
+       14,
+       44,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       43,
+       14
+      ],
+      "to": [
+       13,
+       44,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       45,
+       10
+      ],
+      "to": [
+       13,
+       46,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       45,
+       11
+      ],
+      "to": [
+       14,
+       46,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       45,
+       14
+      ],
+      "to": [
+       13,
+       46,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       47,
+       11
+      ],
+      "to": [
+       13,
+       47,
+       13
+      ],
+      "material": "trim"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
+    },
+    "black": {
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
+    }
+   }
+  },
+  "knight": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       1
+      ],
+      "to": [
+       16,
+       0,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       3
+      ],
+      "to": [
+       17,
+       0,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       4
+      ],
+      "to": [
+       20,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       7
+      ],
+      "to": [
+       21,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       0,
+       8
+      ],
+      "to": [
+       23,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       17
+      ],
+      "to": [
+       21,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       18
+      ],
+      "to": [
+       20,
+       0,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       21
+      ],
+      "to": [
+       17,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       22
+      ],
+      "to": [
+       16,
+       0,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       0
+      ],
+      "to": [
+       16,
+       3,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       1
+      ],
+      "to": [
+       17,
+       3,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       3
+      ],
+      "to": [
+       20,
+       3,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       4
+      ],
+      "to": [
+       21,
+       3,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       7
+      ],
+      "to": [
+       23,
+       3,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       0,
+       1,
+       8
+      ],
+      "to": [
+       24,
+       3,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       17
+      ],
+      "to": [
+       23,
+       3,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       18
+      ],
+      "to": [
+       21,
+       3,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       21
+      ],
+      "to": [
+       20,
+       3,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       22
+      ],
+      "to": [
+       17,
+       3,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       24
+      ],
+      "to": [
+       16,
+       3,
+       24
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       1
+      ],
+      "to": [
+       16,
+       4,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       2
+      ],
+      "to": [
+       17,
+       4,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       4
+      ],
+      "to": [
+       20,
+       4,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       7
+      ],
+      "to": [
+       22,
+       4,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       4,
+       8
+      ],
+      "to": [
+       23,
+       4,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       17
+      ],
+      "to": [
+       22,
+       4,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       18
+      ],
+      "to": [
+       20,
+       4,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       21
+      ],
+      "to": [
+       17,
+       4,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       23
+      ],
+      "to": [
+       16,
+       4,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       2
+      ],
+      "to": [
+       16,
+       5,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       3
+      ],
+      "to": [
+       17,
+       5,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       5
+      ],
+      "to": [
+       18,
+       5,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       6
+      ],
+      "to": [
+       19,
+       5,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       7
+      ],
+      "to": [
+       21,
+       5,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       5,
+       8
+      ],
+      "to": [
+       22,
+       5,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       17
+      ],
+      "to": [
+       21,
+       5,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       18
+      ],
+      "to": [
+       19,
+       5,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       19
+      ],
+      "to": [
+       18,
+       5,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       20
+      ],
+      "to": [
+       17,
+       5,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       5,
+       22
+      ],
+      "to": [
+       16,
+       5,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       3
+      ],
+      "to": [
+       16,
+       6,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       5
+      ],
+      "to": [
+       17,
+       6,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       6
+      ],
+      "to": [
+       18,
+       6,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       7
+      ],
+      "to": [
+       19,
+       6,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       6,
+       8
+      ],
+      "to": [
+       21,
+       6,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       17
+      ],
+      "to": [
+       19,
+       6,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       18
+      ],
+      "to": [
+       18,
+       6,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       19
+      ],
+      "to": [
+       17,
+       6,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       20
+      ],
+      "to": [
+       16,
+       6,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       7,
+       3
+      ],
+      "to": [
+       15,
+       9,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       4
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       8
+      ],
+      "to": [
+       20,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       7,
+       9
+      ],
+      "to": [
+       21,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       16
+      ],
+      "to": [
+       20,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       7,
+       21
+      ],
+      "to": [
+       15,
+       8,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       9,
+       8
+      ],
+      "to": [
+       17,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       9,
+       9
+      ],
+      "to": [
+       20,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       9,
+       16
+      ],
+      "to": [
+       17,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       20
+      ],
+      "to": [
+       15,
+       9,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       3
+      ],
+      "to": [
+       16,
+       10,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       10,
+       7
+      ],
+      "to": [
+       17,
+       10,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       18
+      ],
+      "to": [
+       16,
+       10,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       11,
+       3
+      ],
+      "to": [
+       16,
+       18,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       11,
+       4
+      ],
+      "to": [
+       17,
+       18,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       11,
+       19
+      ],
+      "to": [
+       16,
+       36,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       19,
+       4
+      ],
+      "to": [
+       16,
+       19,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       19,
+       8
+      ],
+      "to": [
+       17,
+       19,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       20,
+       8
+      ],
+      "to": [
+       16,
+       29,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       20,
+       9
+      ],
+      "to": [
+       17,
+       29,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       20,
+       20
+      ],
+      "to": [
+       13,
+       20,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       21,
+       20
+      ],
+      "to": [
+       14,
+       37,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       21,
+       22
+      ],
+      "to": [
+       13,
+       36,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       28,
+       1
+      ],
+      "to": [
+       13,
+       28,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       29,
+       0
+      ],
+      "to": [
+       13,
+       29,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       29,
+       1
+      ],
+      "to": [
+       14,
+       29,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       29,
+       6
+      ],
+      "to": [
+       13,
+       29,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       30,
+       0
+      ],
+      "to": [
+       11,
+       31,
+       1
+      ],
+      "material": "ink"
+     },
+     {
+      "from": [
+       12,
+       30,
+       0
+      ],
+      "to": [
+       12,
+       31,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       30,
+       0
+      ],
+      "to": [
+       14,
+       31,
+       1
+      ],
+      "material": "ink"
+     },
+     {
+      "from": [
+       10,
+       30,
+       2
+      ],
+      "to": [
+       14,
+       30,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       30,
+       8
+      ],
+      "to": [
+       17,
+       36,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       31,
+       2
+      ],
+      "to": [
+       14,
+       31,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       31,
+       7
+      ],
+      "to": [
+       16,
+       32,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       32,
+       0
+      ],
+      "to": [
+       13,
+       36,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       32,
+       1
+      ],
+      "to": [
+       14,
+       32,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       32,
+       4
+      ],
+      "to": [
+       15,
+       32,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       33,
+       1
+      ],
+      "to": [
+       14,
+       36,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       33,
+       3
+      ],
+      "to": [
+       15,
+       38,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       33,
+       4
+      ],
+      "to": [
+       16,
+       36,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       37,
+       1
+      ],
+      "to": [
+       13,
+       37,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       37,
+       4
+      ],
+      "to": [
+       16,
+       37,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       37,
+       19
+      ],
+      "to": [
+       14,
+       37,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       38,
+       4
+      ],
+      "to": [
+       16,
+       39,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       38,
+       7
+      ],
+      "to": [
+       9,
+       39,
+       7
+      ],
+      "material": "ink"
+     },
+     {
+      "from": [
+       10,
+       38,
+       7
+      ],
+      "to": [
+       14,
+       39,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       15,
+       38,
+       7
+      ],
+      "to": [
+       16,
+       39,
+       7
+      ],
+      "material": "ink"
+     },
+     {
+      "from": [
+       8,
+       38,
+       8
+      ],
+      "to": [
+       16,
+       39,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       38,
+       14
+      ],
+      "to": [
+       15,
+       41,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       38,
+       15
+      ],
+      "to": [
+       14,
+       42,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       38,
+       21
+      ],
+      "to": [
+       13,
+       43,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       39,
+       3
+      ],
+      "to": [
+       11,
+       39,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       39,
+       3
+      ],
+      "to": [
+       12,
+       39,
+       3
+      ],
+      "material": "wood",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       13,
+       39,
+       3
+      ],
+      "to": [
+       15,
+       39,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       40,
+       3
+      ],
+      "to": [
+       15,
+       41,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       40,
+       4
+      ],
+      "to": [
+       16,
+       41,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       42,
+       4
+      ],
+      "to": [
+       15,
+       42,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       42,
+       10
+      ],
+      "to": [
+       16,
+       42,
+       12
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       42,
+       13
+      ],
+      "to": [
+       15,
+       42,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       42,
+       14
+      ],
+      "to": [
+       14,
+       42,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       43,
+       10
+      ],
+      "to": [
+       10,
+       46,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       14,
+       43,
+       10
+      ],
+      "to": [
+       15,
+       46,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       43,
+       11
+      ],
+      "to": [
+       11,
+       46,
+       11
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       13,
+       43,
+       11
+      ],
+      "to": [
+       16,
+       46,
+       11
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       43,
+       12
+      ],
+      "to": [
+       10,
+       46,
+       12
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       14,
+       43,
+       12
+      ],
+      "to": [
+       15,
+       46,
+       12
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       43,
+       15
+      ],
+      "to": [
+       13,
+       43,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       43,
+       16
+      ],
+      "to": [
+       14,
+       43,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       44,
+       16
+      ],
+      "to": [
+       13,
+       44,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       47,
+       11
+      ],
+      "to": [
+       10,
+       47,
+       11
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       14,
+       47,
+       11
+      ],
+      "to": [
+       15,
+       47,
+       11
+      ],
+      "material": "wood"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "ink": [
+      40,
+      34,
+      32
+     ],
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
+    },
+    "black": {
+     "ink": [
+      215,
+      205,
+      185
+     ],
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
+    }
+   }
+  },
+  "queen": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       1
+      ],
+      "to": [
+       16,
+       0,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       3
+      ],
+      "to": [
+       17,
+       0,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       4
+      ],
+      "to": [
+       20,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       7
+      ],
+      "to": [
+       21,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       0,
+       8
+      ],
+      "to": [
+       23,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       17
+      ],
+      "to": [
+       21,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       18
+      ],
+      "to": [
+       20,
+       0,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       21
+      ],
+      "to": [
+       17,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       22
+      ],
+      "to": [
+       16,
+       0,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       0
+      ],
+      "to": [
+       16,
+       3,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       1
+      ],
+      "to": [
+       17,
+       3,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       3
+      ],
+      "to": [
+       20,
+       3,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       4
+      ],
+      "to": [
+       21,
+       3,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       7
+      ],
+      "to": [
+       23,
+       3,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       0,
+       1,
+       8
+      ],
+      "to": [
+       24,
+       3,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       17
+      ],
+      "to": [
+       23,
+       3,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       18
+      ],
+      "to": [
+       21,
+       3,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       21
+      ],
+      "to": [
+       20,
+       3,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       22
+      ],
+      "to": [
+       17,
+       3,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       24
+      ],
+      "to": [
+       16,
+       3,
+       24
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       1
+      ],
+      "to": [
+       16,
+       4,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       2
+      ],
+      "to": [
+       17,
+       4,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       4
+      ],
+      "to": [
+       20,
+       4,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       7
+      ],
+      "to": [
+       22,
+       4,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       4,
+       8
+      ],
+      "to": [
+       23,
+       4,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       17
+      ],
+      "to": [
+       22,
+       4,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       18
+      ],
+      "to": [
+       20,
+       4,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       21
+      ],
+      "to": [
+       17,
+       4,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       23
+      ],
+      "to": [
+       16,
+       4,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       2
+      ],
+      "to": [
+       16,
+       5,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       3
+      ],
+      "to": [
+       17,
+       5,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       5
+      ],
+      "to": [
+       18,
+       5,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       6
+      ],
+      "to": [
+       19,
+       5,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       7
+      ],
+      "to": [
+       21,
+       5,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       5,
+       8
+      ],
+      "to": [
+       22,
+       5,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       17
+      ],
+      "to": [
+       21,
+       5,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       18
+      ],
+      "to": [
+       19,
+       5,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       19
+      ],
+      "to": [
+       18,
+       5,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       20
+      ],
+      "to": [
+       17,
+       5,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       5,
+       22
+      ],
+      "to": [
+       16,
+       5,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       3
+      ],
+      "to": [
+       16,
+       6,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       5
+      ],
+      "to": [
+       17,
+       6,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       6
+      ],
+      "to": [
+       18,
+       6,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       7
+      ],
+      "to": [
+       19,
+       6,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       6,
+       8
+      ],
+      "to": [
+       21,
+       6,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       17
+      ],
+      "to": [
+       19,
+       6,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       18
+      ],
+      "to": [
+       18,
+       6,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       19
+      ],
+      "to": [
+       17,
+       6,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       20
+      ],
+      "to": [
+       16,
+       6,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       7,
+       3
+      ],
+      "to": [
+       15,
+       8,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       4
+      ],
+      "to": [
+       16,
+       8,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       8
+      ],
+      "to": [
+       20,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       7,
+       9
+      ],
+      "to": [
+       21,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       16
+      ],
+      "to": [
+       20,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       7,
+       21
+      ],
+      "to": [
+       15,
+       8,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       4
+      ],
+      "to": [
+       15,
+       9,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       5
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       8
+      ],
+      "to": [
+       19,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       9,
+       9
+      ],
+      "to": [
+       20,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       16
+      ],
+      "to": [
+       19,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       20
+      ],
+      "to": [
+       15,
+       9,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       5
+      ],
+      "to": [
+       15,
+       15,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       6
+      ],
+      "to": [
+       16,
+       15,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       8
+      ],
+      "to": [
+       18,
+       15,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       10,
+       9
+      ],
+      "to": [
+       19,
+       15,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       16
+      ],
+      "to": [
+       18,
+       15,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       17
+      ],
+      "to": [
+       16,
+       15,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       19
+      ],
+      "to": [
+       15,
+       15,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       6
+      ],
+      "to": [
+       15,
+       16,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       7
+      ],
+      "to": [
+       16,
+       16,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       8
+      ],
+      "to": [
+       17,
+       16,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       16,
+       9
+      ],
+      "to": [
+       18,
+       16,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       16
+      ],
+      "to": [
+       17,
+       16,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       17
+      ],
+      "to": [
+       16,
+       16,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       18
+      ],
+      "to": [
+       15,
+       16,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       7
+      ],
+      "to": [
+       13,
+       31,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       8
+      ],
+      "to": [
+       15,
+       31,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       9
+      ],
+      "to": [
+       16,
+       31,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       17,
+       11
+      ],
+      "to": [
+       17,
+       31,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       14
+      ],
+      "to": [
+       16,
+       31,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       16
+      ],
+      "to": [
+       15,
+       31,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       17
+      ],
+      "to": [
+       13,
+       31,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       32,
+       3
+      ],
+      "to": [
+       15,
+       32,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       4
+      ],
+      "to": [
+       16,
+       32,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       32,
+       5
+      ],
+      "to": [
+       15,
+       32,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       7
+      ],
+      "to": [
+       16,
+       32,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       32,
+       8
+      ],
+      "to": [
+       4,
+       32,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       32,
+       8
+      ],
+      "to": [
+       17,
+       32,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       20,
+       32,
+       8
+      ],
+      "to": [
+       20,
+       32,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       32,
+       9
+      ],
+      "to": [
+       21,
+       32,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       32,
+       16
+      ],
+      "to": [
+       4,
+       32,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       32,
+       16
+      ],
+      "to": [
+       17,
+       32,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       20,
+       32,
+       16
+      ],
+      "to": [
+       20,
+       32,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       17
+      ],
+      "to": [
+       16,
+       32,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       32,
+       18
+      ],
+      "to": [
+       15,
+       32,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       20
+      ],
+      "to": [
+       16,
+       32,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       32,
+       21
+      ],
+      "to": [
+       15,
+       32,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       33,
+       5
+      ],
+      "to": [
+       15,
+       34,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       33,
+       6
+      ],
+      "to": [
+       16,
+       34,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       33,
+       8
+      ],
+      "to": [
+       18,
+       34,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       33,
+       9
+      ],
+      "to": [
+       19,
+       34,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       33,
+       16
+      ],
+      "to": [
+       18,
+       34,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       33,
+       17
+      ],
+      "to": [
+       16,
+       34,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       33,
+       19
+      ],
+      "to": [
+       15,
+       34,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       35,
+       4
+      ],
+      "to": [
+       15,
+       35,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       35,
+       5
+      ],
+      "to": [
+       16,
+       35,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       35,
+       8
+      ],
+      "to": [
+       19,
+       35,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       35,
+       9
+      ],
+      "to": [
+       20,
+       35,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       35,
+       16
+      ],
+      "to": [
+       19,
+       35,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       35,
+       17
+      ],
+      "to": [
+       16,
+       35,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       35,
+       20
+      ],
+      "to": [
+       15,
+       35,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       36,
+       3
+      ],
+      "to": [
+       15,
+       39,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       36,
+       4
+      ],
+      "to": [
+       16,
+       39,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       36,
+       8
+      ],
+      "to": [
+       20,
+       39,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       36,
+       9
+      ],
+      "to": [
+       21,
+       39,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       36,
+       16
+      ],
+      "to": [
+       20,
+       39,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       36,
+       17
+      ],
+      "to": [
+       16,
+       39,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       36,
+       21
+      ],
+      "to": [
+       15,
+       39,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       40,
+       3
+      ],
+      "to": [
+       15,
+       40,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       40,
+       4
+      ],
+      "to": [
+       16,
+       40,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       40,
+       8
+      ],
+      "to": [
+       20,
+       40,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       40,
+       9
+      ],
+      "to": [
+       21,
+       40,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       40,
+       16
+      ],
+      "to": [
+       20,
+       40,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       40,
+       17
+      ],
+      "to": [
+       16,
+       40,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       40,
+       21
+      ],
+      "to": [
+       15,
+       40,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       41,
+       4
+      ],
+      "to": [
+       15,
+       41,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       41,
+       5
+      ],
+      "to": [
+       16,
+       41,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       41,
+       8
+      ],
+      "to": [
+       19,
+       41,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       41,
+       9
+      ],
+      "to": [
+       20,
+       41,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       41,
+       16
+      ],
+      "to": [
+       19,
+       41,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       41,
+       17
+      ],
+      "to": [
+       16,
+       41,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       41,
+       20
+      ],
+      "to": [
+       15,
+       41,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       42,
+       5
+      ],
+      "to": [
+       15,
+       44,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       42,
+       6
+      ],
+      "to": [
+       16,
+       44,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       42,
+       8
+      ],
+      "to": [
+       18,
+       44,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       42,
+       9
+      ],
+      "to": [
+       19,
+       44,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       42,
+       16
+      ],
+      "to": [
+       18,
+       44,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       42,
+       17
+      ],
+      "to": [
+       16,
+       44,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       42,
+       19
+      ],
+      "to": [
+       15,
+       44,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       45,
+       5
+      ],
+      "to": [
+       15,
+       45,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       45,
+       6
+      ],
+      "to": [
+       16,
+       45,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       45,
+       8
+      ],
+      "to": [
+       18,
+       45,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       45,
+       9
+      ],
+      "to": [
+       19,
+       45,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       45,
+       16
+      ],
+      "to": [
+       18,
+       45,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       45,
+       17
+      ],
+      "to": [
+       16,
+       45,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       45,
+       19
+      ],
+      "to": [
+       15,
+       45,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       12,
+       46,
+       5
+      ],
+      "to": [
+       12,
+       46,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       46,
+       6
+      ],
+      "to": [
+       15,
+       46,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       46,
+       7
+      ],
+      "to": [
+       16,
+       46,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       46,
+       8
+      ],
+      "to": [
+       17,
+       46,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       46,
+       9
+      ],
+      "to": [
+       18,
+       46,
+       11
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       46,
+       12
+      ],
+      "to": [
+       19,
+       46,
+       12
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       46,
+       13
+      ],
+      "to": [
+       18,
+       46,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       46,
+       16
+      ],
+      "to": [
+       17,
+       46,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       46,
+       17
+      ],
+      "to": [
+       16,
+       46,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       46,
+       18
+      ],
+      "to": [
+       15,
+       46,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       12,
+       46,
+       19
+      ],
+      "to": [
+       12,
+       46,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       12,
+       47,
+       5
+      ],
+      "to": [
+       12,
+       48,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       47,
+       7
+      ],
+      "to": [
+       7,
+       49,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       17,
+       47,
+       7
+      ],
+      "to": [
+       17,
+       49,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       47,
+       8
+      ],
+      "to": [
+       13,
+       50,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       47,
+       9
+      ],
+      "to": [
+       14,
+       50,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       47,
+       10
+      ],
+      "to": [
+       15,
+       50,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       47,
+       11
+      ],
+      "to": [
+       16,
+       50,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       47,
+       12
+      ],
+      "to": [
+       6,
+       48,
+       12
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       18,
+       47,
+       12
+      ],
+      "to": [
+       19,
+       48,
+       12
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       47,
+       14
+      ],
+      "to": [
+       15,
+       50,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       47,
+       15
+      ],
+      "to": [
+       14,
+       50,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       47,
+       16
+      ],
+      "to": [
+       13,
+       50,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       47,
+       17
+      ],
+      "to": [
+       7,
+       49,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       17,
+       47,
+       17
+      ],
+      "to": [
+       17,
+       49,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       47,
+       18
+      ],
+      "to": [
+       12,
+       48,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       51,
+       5
+      ],
+      "to": [
+       12,
+       51,
+       5
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       7,
+       51,
+       7
+      ],
+      "to": [
+       7,
+       51,
+       7
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       17,
+       51,
+       7
+      ],
+      "to": [
+       17,
+       51,
+       7
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       11,
+       51,
+       9
+      ],
+      "to": [
+       13,
+       51,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       51,
+       10
+      ],
+      "to": [
+       14,
+       51,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       51,
+       11
+      ],
+      "to": [
+       15,
+       51,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       51,
+       12
+      ],
+      "to": [
+       6,
+       51,
+       12
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       19,
+       51,
+       12
+      ],
+      "to": [
+       19,
+       51,
+       12
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       10,
+       51,
+       14
+      ],
+      "to": [
+       14,
+       51,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       51,
+       15
+      ],
+      "to": [
+       13,
+       51,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       51,
+       17
+      ],
+      "to": [
+       7,
+       51,
+       17
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       17,
+       51,
+       17
+      ],
+      "to": [
+       17,
+       51,
+       17
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       12,
+       51,
+       18
+      ],
+      "to": [
+       12,
+       51,
+       18
+      ],
+      "material": "trim",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       11,
+       52,
+       11
+      ],
+      "to": [
+       13,
+       52,
+       13
+      ],
+      "material": "wood"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
+    },
+    "black": {
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
+    }
+   }
+  },
+  "king": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       8,
+       0,
+       1
+      ],
+      "to": [
+       16,
+       0,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       3
+      ],
+      "to": [
+       17,
+       0,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       4
+      ],
+      "to": [
+       20,
+       0,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       7
+      ],
+      "to": [
+       21,
+       0,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       0,
+       8
+      ],
+      "to": [
+       23,
+       0,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       0,
+       17
+      ],
+      "to": [
+       21,
+       0,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       0,
+       18
+      ],
+      "to": [
+       20,
+       0,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       0,
+       21
+      ],
+      "to": [
+       17,
+       0,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       0,
+       22
+      ],
+      "to": [
+       16,
+       0,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       0
+      ],
+      "to": [
+       16,
+       3,
+       0
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       1
+      ],
+      "to": [
+       17,
+       3,
+       2
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       3
+      ],
+      "to": [
+       20,
+       3,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       4
+      ],
+      "to": [
+       21,
+       3,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       7
+      ],
+      "to": [
+       23,
+       3,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       0,
+       1,
+       8
+      ],
+      "to": [
+       24,
+       3,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       1,
+       17
+      ],
+      "to": [
+       23,
+       3,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       1,
+       18
+      ],
+      "to": [
+       21,
+       3,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       1,
+       21
+      ],
+      "to": [
+       20,
+       3,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       1,
+       22
+      ],
+      "to": [
+       17,
+       3,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       1,
+       24
+      ],
+      "to": [
+       16,
+       3,
+       24
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       1
+      ],
+      "to": [
+       16,
+       4,
+       1
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       2
+      ],
+      "to": [
+       17,
+       4,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       4
+      ],
+      "to": [
+       20,
+       4,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       7
+      ],
+      "to": [
+       22,
+       4,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       1,
+       4,
+       8
+      ],
+      "to": [
+       23,
+       4,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       2,
+       4,
+       17
+      ],
+      "to": [
+       22,
+       4,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       4,
+       18
+      ],
+      "to": [
+       20,
+       4,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       4,
+       21
+      ],
+      "to": [
+       17,
+       4,
+       22
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       4,
+       23
+      ],
+      "to": [
+       16,
+       4,
+       23
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       5,
+       2
+      ],
+      "to": [
+       16,
+       5,
+       2
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       3
+      ],
+      "to": [
+       17,
+       5,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       5
+      ],
+      "to": [
+       18,
+       5,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       6
+      ],
+      "to": [
+       19,
+       5,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       7
+      ],
+      "to": [
+       21,
+       5,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       2,
+       5,
+       8
+      ],
+      "to": [
+       22,
+       5,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       5,
+       17
+      ],
+      "to": [
+       21,
+       5,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       5,
+       18
+      ],
+      "to": [
+       19,
+       5,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       5,
+       19
+      ],
+      "to": [
+       18,
+       5,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       5,
+       20
+      ],
+      "to": [
+       17,
+       5,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       5,
+       22
+      ],
+      "to": [
+       16,
+       5,
+       22
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       3
+      ],
+      "to": [
+       16,
+       6,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       5
+      ],
+      "to": [
+       17,
+       6,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       6
+      ],
+      "to": [
+       18,
+       6,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       7
+      ],
+      "to": [
+       19,
+       6,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       6,
+       8
+      ],
+      "to": [
+       21,
+       6,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       6,
+       17
+      ],
+      "to": [
+       19,
+       6,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       6,
+       18
+      ],
+      "to": [
+       18,
+       6,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       6,
+       19
+      ],
+      "to": [
+       17,
+       6,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       6,
+       20
+      ],
+      "to": [
+       16,
+       6,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       7,
+       3
+      ],
+      "to": [
+       15,
+       8,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       4
+      ],
+      "to": [
+       16,
+       8,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       8
+      ],
+      "to": [
+       20,
+       8,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       7,
+       9
+      ],
+      "to": [
+       21,
+       8,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       7,
+       16
+      ],
+      "to": [
+       20,
+       8,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       7,
+       17
+      ],
+      "to": [
+       16,
+       8,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       7,
+       21
+      ],
+      "to": [
+       15,
+       8,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       4
+      ],
+      "to": [
+       15,
+       9,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       5
+      ],
+      "to": [
+       16,
+       9,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       8
+      ],
+      "to": [
+       19,
+       9,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       9,
+       9
+      ],
+      "to": [
+       20,
+       9,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       9,
+       16
+      ],
+      "to": [
+       19,
+       9,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       9,
+       17
+      ],
+      "to": [
+       16,
+       9,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       9,
+       20
+      ],
+      "to": [
+       15,
+       9,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       5
+      ],
+      "to": [
+       15,
+       15,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       6
+      ],
+      "to": [
+       16,
+       15,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       8
+      ],
+      "to": [
+       18,
+       15,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       10,
+       9
+      ],
+      "to": [
+       19,
+       15,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       10,
+       16
+      ],
+      "to": [
+       18,
+       15,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       10,
+       17
+      ],
+      "to": [
+       16,
+       15,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       10,
+       19
+      ],
+      "to": [
+       15,
+       15,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       6
+      ],
+      "to": [
+       15,
+       16,
+       6
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       7
+      ],
+      "to": [
+       16,
+       16,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       8
+      ],
+      "to": [
+       17,
+       16,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       16,
+       9
+      ],
+      "to": [
+       18,
+       16,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       16,
+       16
+      ],
+      "to": [
+       17,
+       16,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       16,
+       17
+      ],
+      "to": [
+       16,
+       16,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       16,
+       18
+      ],
+      "to": [
+       15,
+       16,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       7
+      ],
+      "to": [
+       13,
+       29,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       8
+      ],
+      "to": [
+       15,
+       29,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       9
+      ],
+      "to": [
+       16,
+       29,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       7,
+       17,
+       11
+      ],
+      "to": [
+       17,
+       29,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       17,
+       14
+      ],
+      "to": [
+       16,
+       29,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       17,
+       16
+      ],
+      "to": [
+       15,
+       29,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       17,
+       17
+      ],
+      "to": [
+       13,
+       29,
+       17
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       30,
+       4
+      ],
+      "to": [
+       15,
+       30,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       30,
+       7
+      ],
+      "to": [
+       16,
+       30,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       30,
+       8
+      ],
+      "to": [
+       17,
+       30,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       30,
+       9
+      ],
+      "to": [
+       20,
+       31,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       30,
+       16
+      ],
+      "to": [
+       17,
+       30,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       30,
+       17
+      ],
+      "to": [
+       16,
+       30,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       30,
+       18
+      ],
+      "to": [
+       15,
+       30,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       31,
+       4
+      ],
+      "to": [
+       15,
+       31,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       31,
+       5
+      ],
+      "to": [
+       16,
+       31,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       31,
+       8
+      ],
+      "to": [
+       19,
+       31,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       31,
+       16
+      ],
+      "to": [
+       19,
+       31,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       31,
+       17
+      ],
+      "to": [
+       16,
+       31,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       31,
+       20
+      ],
+      "to": [
+       15,
+       31,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       32,
+       5
+      ],
+      "to": [
+       15,
+       32,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       6
+      ],
+      "to": [
+       16,
+       32,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       32,
+       8
+      ],
+      "to": [
+       18,
+       32,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       32,
+       9
+      ],
+      "to": [
+       19,
+       32,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       32,
+       16
+      ],
+      "to": [
+       18,
+       32,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       32,
+       17
+      ],
+      "to": [
+       16,
+       32,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       32,
+       19
+      ],
+      "to": [
+       15,
+       32,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       33,
+       4
+      ],
+      "to": [
+       15,
+       33,
+       4
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       33,
+       5
+      ],
+      "to": [
+       16,
+       33,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       33,
+       8
+      ],
+      "to": [
+       19,
+       33,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       33,
+       9
+      ],
+      "to": [
+       20,
+       33,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       33,
+       16
+      ],
+      "to": [
+       19,
+       33,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       33,
+       17
+      ],
+      "to": [
+       16,
+       33,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       33,
+       20
+      ],
+      "to": [
+       15,
+       33,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       34,
+       3
+      ],
+      "to": [
+       15,
+       35,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       34,
+       4
+      ],
+      "to": [
+       16,
+       39,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       34,
+       8
+      ],
+      "to": [
+       20,
+       39,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       3,
+       34,
+       9
+      ],
+      "to": [
+       21,
+       39,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       4,
+       34,
+       16
+      ],
+      "to": [
+       20,
+       39,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       34,
+       17
+      ],
+      "to": [
+       16,
+       39,
+       20
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       34,
+       21
+      ],
+      "to": [
+       15,
+       39,
+       21
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       36,
+       3
+      ],
+      "to": [
+       11,
+       36,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       12,
+       36,
+       3
+      ],
+      "to": [
+       12,
+       36,
+       3
+      ],
+      "material": "wood",
+      "beam_emitter": true
+     },
+     {
+      "from": [
+       13,
+       36,
+       3
+      ],
+      "to": [
+       15,
+       36,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       37,
+       3
+      ],
+      "to": [
+       15,
+       39,
+       3
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       40,
+       3
+      ],
+      "to": [
+       15,
+       40,
+       3
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       40,
+       4
+      ],
+      "to": [
+       16,
+       40,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       40,
+       8
+      ],
+      "to": [
+       20,
+       40,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       3,
+       40,
+       9
+      ],
+      "to": [
+       21,
+       40,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       40,
+       16
+      ],
+      "to": [
+       20,
+       40,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       40,
+       17
+      ],
+      "to": [
+       16,
+       40,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       40,
+       21
+      ],
+      "to": [
+       15,
+       40,
+       21
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       41,
+       4
+      ],
+      "to": [
+       15,
+       41,
+       4
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       41,
+       5
+      ],
+      "to": [
+       16,
+       41,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       41,
+       8
+      ],
+      "to": [
+       19,
+       41,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       4,
+       41,
+       9
+      ],
+      "to": [
+       20,
+       41,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       41,
+       16
+      ],
+      "to": [
+       19,
+       41,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       41,
+       17
+      ],
+      "to": [
+       16,
+       41,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       41,
+       20
+      ],
+      "to": [
+       15,
+       41,
+       20
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       42,
+       5
+      ],
+      "to": [
+       15,
+       44,
+       5
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       42,
+       6
+      ],
+      "to": [
+       16,
+       44,
+       7
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       42,
+       8
+      ],
+      "to": [
+       18,
+       44,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       5,
+       42,
+       9
+      ],
+      "to": [
+       19,
+       44,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       6,
+       42,
+       16
+      ],
+      "to": [
+       18,
+       44,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       42,
+       17
+      ],
+      "to": [
+       16,
+       44,
+       18
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       42,
+       19
+      ],
+      "to": [
+       15,
+       44,
+       19
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       45,
+       5
+      ],
+      "to": [
+       15,
+       45,
+       5
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       45,
+       6
+      ],
+      "to": [
+       16,
+       45,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       45,
+       8
+      ],
+      "to": [
+       18,
+       45,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       45,
+       9
+      ],
+      "to": [
+       19,
+       45,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       45,
+       16
+      ],
+      "to": [
+       18,
+       45,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       45,
+       17
+      ],
+      "to": [
+       16,
+       45,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       45,
+       19
+      ],
+      "to": [
+       15,
+       45,
+       19
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       46,
+       6
+      ],
+      "to": [
+       15,
+       46,
+       6
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       46,
+       7
+      ],
+      "to": [
+       16,
+       46,
+       7
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       46,
+       8
+      ],
+      "to": [
+       17,
+       46,
+       8
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       46,
+       9
+      ],
+      "to": [
+       18,
+       46,
+       15
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       7,
+       46,
+       16
+      ],
+      "to": [
+       17,
+       46,
+       16
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       8,
+       46,
+       17
+      ],
+      "to": [
+       16,
+       46,
+       17
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       9,
+       46,
+       18
+      ],
+      "to": [
+       15,
+       46,
+       18
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       47,
+       8
+      ],
+      "to": [
+       14,
+       47,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       47,
+       9
+      ],
+      "to": [
+       15,
+       47,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       47,
+       10
+      ],
+      "to": [
+       16,
+       47,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       47,
+       15
+      ],
+      "to": [
+       15,
+       47,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       47,
+       16
+      ],
+      "to": [
+       14,
+       47,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       48,
+       8
+      ],
+      "to": [
+       13,
+       48,
+       8
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       48,
+       9
+      ],
+      "to": [
+       14,
+       48,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       48,
+       10
+      ],
+      "to": [
+       15,
+       48,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       8,
+       48,
+       11
+      ],
+      "to": [
+       16,
+       48,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       48,
+       14
+      ],
+      "to": [
+       15,
+       48,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       48,
+       15
+      ],
+      "to": [
+       14,
+       48,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       48,
+       16
+      ],
+      "to": [
+       13,
+       48,
+       16
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       49,
+       9
+      ],
+      "to": [
+       13,
+       49,
+       9
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       49,
+       10
+      ],
+      "to": [
+       14,
+       49,
+       10
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       9,
+       49,
+       11
+      ],
+      "to": [
+       15,
+       49,
+       13
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       10,
+       49,
+       14
+      ],
+      "to": [
+       14,
+       49,
+       14
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       49,
+       15
+      ],
+      "to": [
+       13,
+       49,
+       15
+      ],
+      "material": "wood"
+     },
+     {
+      "from": [
+       11,
+       50,
+       10
+      ],
+      "to": [
+       13,
+       54,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       50,
+       11
+      ],
+      "to": [
+       14,
+       54,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       50,
+       14
+      ],
+      "to": [
+       13,
+       54,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       55,
+       10
+      ],
+      "to": [
+       14,
+       55,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       55,
+       11
+      ],
+      "to": [
+       18,
+       55,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       55,
+       14
+      ],
+      "to": [
+       14,
+       55,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       56,
+       10
+      ],
+      "to": [
+       18,
+       56,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       5,
+       56,
+       11
+      ],
+      "to": [
+       19,
+       56,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       56,
+       14
+      ],
+      "to": [
+       18,
+       56,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       57,
+       10
+      ],
+      "to": [
+       14,
+       57,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       6,
+       57,
+       11
+      ],
+      "to": [
+       18,
+       57,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       57,
+       14
+      ],
+      "to": [
+       14,
+       57,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       58,
+       10
+      ],
+      "to": [
+       13,
+       60,
+       10
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       10,
+       58,
+       11
+      ],
+      "to": [
+       14,
+       60,
+       13
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       58,
+       14
+      ],
+      "to": [
+       13,
+       60,
+       14
+      ],
+      "material": "trim"
+     },
+     {
+      "from": [
+       11,
+       61,
+       11
+      ],
+      "to": [
+       13,
+       61,
+       13
+      ],
+      "material": "trim"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "trim": [
+      205,
+      186,
+      146
+     ],
+     "wood": [
+      240,
+      232,
+      212
+     ]
+    },
+    "black": {
+     "trim": [
+      92,
+      80,
+      72
+     ],
+     "wood": [
+      46,
+      42,
+      44
+     ]
+    }
+   }
+  },
+  "board": {
+   "model": {
+    "width": 25,
+    "boxes": [
+     {
+      "from": [
+       0,
+       0,
+       0
+      ],
+      "to": [
+       24,
+       0,
+       1
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       2
+      ],
+      "to": [
+       14,
+       0,
+       2
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       15,
+       0,
+       2
+      ],
+      "to": [
+       19,
+       0,
+       2
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       20,
+       0,
+       2
+      ],
+      "to": [
+       24,
+       0,
+       2
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       3
+      ],
+      "to": [
+       24,
+       0,
+       4
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       5
+      ],
+      "to": [
+       2,
+       0,
+       6
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       3,
+       0,
+       5
+      ],
+      "to": [
+       9,
+       0,
+       6
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       10,
+       0,
+       5
+      ],
+      "to": [
+       24,
+       0,
+       6
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       7
+      ],
+      "to": [
+       24,
+       0,
+       9
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       10
+      ],
+      "to": [
+       17,
+       0,
+       11
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       18,
+       0,
+       10
+      ],
+      "to": [
+       22,
+       0,
+       11
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       23,
+       0,
+       10
+      ],
+      "to": [
+       24,
+       0,
+       11
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       12
+      ],
+      "to": [
+       7,
+       0,
+       12
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       8,
+       0,
+       12
+      ],
+      "to": [
+       16,
+       0,
+       12
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       17,
+       0,
+       12
+      ],
+      "to": [
+       24,
+       0,
+       12
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       13
+      ],
+      "to": [
+       24,
+       0,
+       16
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       17
+      ],
+      "to": [
+       1,
+       0,
+       17
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       2,
+       0,
+       17
+      ],
+      "to": [
+       6,
+       0,
+       17
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       7,
+       0,
+       17
+      ],
+      "to": [
+       24,
+       0,
+       17
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       18
+      ],
+      "to": [
+       24,
+       0,
+       19
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       20
+      ],
+      "to": [
+       12,
+       0,
+       21
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       13,
+       0,
+       20
+      ],
+      "to": [
+       19,
+       0,
+       21
+      ],
+      "material": "grain"
+     },
+     {
+      "from": [
+       20,
+       0,
+       20
+      ],
+      "to": [
+       24,
+       0,
+       21
+      ],
+      "material": "sq"
+     },
+     {
+      "from": [
+       0,
+       0,
+       22
+      ],
+      "to": [
+       24,
+       0,
+       24
+      ],
+      "material": "sq"
+     }
+    ]
+   },
+   "colors": {
+    "white": {
+     "sq": [
+      240,
+      217,
+      181
+     ],
+     "grain": [
+      228,
+      203,
+      165
+     ]
+    },
+    "black": {
+     "sq": [
+      181,
+      136,
+      99
+     ],
+     "grain": [
+      165,
+      121,
+      86
+     ]
+    }
+   }
   }
+ }
 }

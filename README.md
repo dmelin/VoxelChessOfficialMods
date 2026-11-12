@@ -74,16 +74,16 @@ order of the list in the menu (a mod lower in the list is applied later).
 A piece is built from solid boxes of voxels. Coordinates are integer voxel indices, both corners
 inclusive.
 
-- `width`: 1-15. The footprint is `width x width` (x and z, 0 to width-1). A board square is 15
-  voxels wide.
+- `width`: 1-25. The footprint is `width x width` (x and z, 0 to width-1). A board square is 25
+  voxels wide, so a piece narrower than 25 stands smaller on its square, centred.
 - **Axes** (from the piece's own point of view): the piece looks toward low `z`, so `z = 0` is its
-  front and `z = width-1` its back. `y` is up (max 39). `x` runs from the piece's **left to its
+  front and `z = width-1` its back. `y` is up (max 79). `x` runs from the piece's **left to its
   right**: `x = 0` is its left flank and `x = width-1` its right. In other words, stand behind the
   piece looking the way it looks and `x` grows left to right; if you face the front of the piece
   instead, you see it mirrored and `x` grows from your right to your left. Keep eyes, visors,
   barrels at low `z`.
-- `boxes`: up to 256, each `{"from": [x,y,z], "to": [x,y,z], "material": "name"}`. Later boxes
-  overwrite earlier ones. At most 9000 voxels in total. Pieces are hollow inside, only the voxels
+- `boxes`: up to 4096, each `{"from": [x,y,z], "to": [x,y,z], "material": "name"}`. Later boxes
+  overwrite earlier ones. At most 50000 voxels in total. Pieces are hollow inside, only the voxels
   near the surface are drawn.
 - Optional per box: `"glow": true` (self-lit voxels, they stay bright in the shade) and
   `"beam_emitter": true` (a beam leaves from here, see capture). At most 32 emitter voxels per
@@ -166,7 +166,7 @@ only decoration.
 
 The board is part of the piece set. The `board` entry is **one board square, one layer of voxels**:
 
-- `width` must be 15 and every box must be on `y = 0` (one layer).
+- `width` must be 25 and every box must be on `y = 0` (one layer).
 - `colors.white` is the palette of the light squares, `colors.black` of the dark squares.
 - The game repeats the section for all 64 squares, in a chessboard pattern, and builds each square
   from six sheets of it on top of each other: the top sheet as you drew it, the sheets under it
@@ -182,19 +182,19 @@ and a glowing outer ring of voxels in green (white squares) and magenta (black s
 
 The game's own pieces and board are a pack like any other: **Classic Staunton**, in
 [`core_set/mod.json`](core_set/mod.json). Ivory and ebony pieces, shaped like a tournament set, each
-standing on the full 15 x 15 voxels of its square on a plain light and dark wood board. Every mod is
+standing on the full 25 x 25 voxels of its square on a plain light and dark wood board. Every mod is
 applied on top of it, so whatever your mod leaves out is what is described here. To start your own
 mod, copy `core_set/` under a new name, change its `id` and `name`, and edit.
 
 | Piece | Footprint | Height (voxels) | Look |
 |---|---|---|---|
-| pawn | 15 x 15 | 17 | round base, trim ring, a slim stem and a round head |
-| rook | 15 x 15 | 23 | broad base, tall tower, a flared top with eight battlements |
-| bishop | 15 x 15 | 29 | slim body and collar, a pointed mitre with a slit down its front |
-| knight | 15 x 15 | 29 | a horse head facing forward, ears, eyes and a trim mane |
-| queen | 15 x 15 | 32 | tall, ringed body and a crown of points |
-| king | 15 x 15 | 37 | like the queen, taller, with a cross on top |
-| board | 15 x 15 | 1 (one layer) | pale wood squares with a little grain |
+| pawn | 25 x 25 | 28 | round base, trim ring, a slim stem and a round head |
+| rook | 25 x 25 | 38 | broad base, tall tower, a flared top with eight battlements |
+| bishop | 25 x 25 | 48 | slim body and collar, a pointed mitre with a slit down its front |
+| knight | 25 x 25 | 48 | a horse head facing forward, ears, eyes and a trim mane |
+| queen | 25 x 25 | 53 | tall, ringed body and a crown of points |
+| king | 25 x 25 | 62 | like the queen, taller, with a cross on top |
+| board | 25 x 25 | 1 (one layer) | pale wood squares with a little grain |
 
 Every piece is built the same way, bottom to top: a base of three overlapping boxes (two long
 rectangles crossed, with a smaller one between), a ring of trim, then a body that gets slimmer the
@@ -245,7 +245,7 @@ beam from its head.
 
 ### The pawn, in full
 
-The whole design of the core pawn: a mod's `model` has the same shape. Boxes are listed from the
+A simple pawn on a 15-wide footprint (so it stands smaller than the core pawn, which is 25 wide with bevelled edges and too long to list here). A mod's `model` has the same shape. Boxes are listed from the
 bottom up, three boxes per level (the overlapping cross-section described above).
 
 ```json
@@ -348,13 +348,13 @@ A rook that is only faster and flies, a pawn with a complete design and a beam, 
     },
     "board": {
       "model": {
-        "width": 15,
+        "width": 25,
         "boxes": [
-          {"from": [0, 0, 0], "to": [14, 0, 14], "material": "stone"},
-          {"from": [0, 0, 0], "to": [14, 0, 0], "material": "edge", "glow": true},
-          {"from": [0, 0, 14], "to": [14, 0, 14], "material": "edge", "glow": true},
-          {"from": [0, 0, 1], "to": [0, 0, 13], "material": "edge", "glow": true},
-          {"from": [14, 0, 1], "to": [14, 0, 13], "material": "edge", "glow": true}
+          {"from": [0, 0, 0], "to": [24, 0, 24], "material": "stone"},
+          {"from": [0, 0, 0], "to": [24, 0, 0], "material": "edge", "glow": true},
+          {"from": [0, 0, 24], "to": [24, 0, 24], "material": "edge", "glow": true},
+          {"from": [0, 0, 1], "to": [0, 0, 23], "material": "edge", "glow": true},
+          {"from": [24, 0, 1], "to": [24, 0, 23], "material": "edge", "glow": true}
         ]
       },
       "colors": {
