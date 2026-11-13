@@ -11,6 +11,10 @@ guide to writing your own. Copy a mod's folder (`tiny_tank`, `orbs_of_power`) in
 
 The game ships with the core set and no mods.
 
+A mod changes how the pieces and the board **look, travel and capture**. It never changes the rules of
+chess: which moves are legal is decided by the game, and checked by the game service for online and
+saved games, whatever mods are on.
+
 # Writing a piece mod
 
 A mod is a single `mod.json` in its own folder. Voxel Chess loads every
@@ -18,10 +22,16 @@ A mod is a single `mod.json` in its own folder. Voxel Chess loads every
 
 - `user://mods/` (your own mods; on Windows `%APPDATA%/Godot/app_userdata/Voxel Chess/mods`)
 
-Turn mods on, off and reorder them from the **MODS** button in the menu. The board behind the menu
-reloads at once to show the change. Click a mod's row to select it and see its `preview.png`; the **i** button next to a mod (shown when
-it has a `description`) opens its description. Only problems are written under a mod: an invalid
-pack's error, or a piece entry that was ignored.
+Turn mods on and off with the check box in front of each one in the **MODS** screen of the menu, and set
+their order with **UP** and **DOWN**; turning a mod on does not move it. The board behind the menu
+reloads at once to show a change (a "Loading mod assets" notice shows while it does). Click a mod's name to
+select it and see its `preview.png`; the **i** button next to a mod (shown when it has a `description`) opens
+its description. Only problems are written under a mod: an invalid pack's error, or a piece entry that was
+ignored.
+
+**EDIT** opens a mod in the game's Asset Builder: the voxels of each piece on one side and the mod's JSON on
+the other. A mod that does not pass the checks opens too, as plain JSON with the reason it failed
+(a syntax error with its line, or which piece and value is wrong), so you can fix it there and save.
 
 `tiny_tank/` ("SciFi Chess", in this repo) is a complete example: all six pieces and the board.
 `core_set/` is another, and the one every mod is applied on top of.
@@ -45,7 +55,7 @@ pack's error, or a piece entry that was ignored.
 }
 ```
 
-An invalid pack is shown in the menu with an error and cannot be enabled.
+An invalid pack is shown in the menu with an error and cannot be enabled until it is fixed (**EDIT** opens it).
 
 ## How mods combine
 
@@ -215,8 +225,9 @@ eyes and nostrils (dark on the white side, light on the black side, so they read
 The board's materials are `sq` (the square: `[240, 217, 181]` light, `[181, 136, 99]` dark) and
 `grain` (a slightly different shade for the six short lines of grain on each square).
 
-**Behaviour.** The core set uses the standard rules for how pieces move and capture, and a mod
-inherits all of it:
+**Behaviour.** The core set's pieces travel and capture as below (how fast a piece glides, whether it flies
+or flows over the pieces in its way, and the effect of a capture; the moves themselves are always chess),
+and a mod inherits all of it:
 
 | Piece | `speed` | `pass_over_occupied_space` | `capture` |
 |---|---|---|---|
