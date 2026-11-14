@@ -43,7 +43,7 @@ the other. A mod that does not pass the checks opens too, as plain JSON with the
   "id": "unique_id",          // folder-independent, max 80 chars
   "name": "Shown in the menu",
   "description": "Optional text, max 600 chars, shown with the (i) button next to the mod",
-  "pieces": {                 // 1-7 of: pawn knight bishop rook queen king board
+  "pieces": {                 // optional; up to 7 of: pawn knight bishop rook queen king board
     "<piece>": {
       "speed":   5,                        // optional, 1-9
       "pass_over_occupied_space": "flow",  // optional, "fly" or "flow"
@@ -54,6 +54,9 @@ the other. A mod that does not pass the checks opens too, as plain JSON with the
   }
 }
 ```
+
+A pack needs at least one piece entry or one clutter type. The optional top-level `clutter` object
+adds board decorations; see [Board clutter](#board-clutter).
 
 An invalid pack is shown in the menu with an error and cannot be enabled until it is fixed (**EDIT** opens it).
 
@@ -187,6 +190,97 @@ The board is part of the piece set. The `board` entry is **one board square, one
 
 The SciFi Chess board is granite: a base material, two kinds of speckle voxels scattered over it,
 and a glowing outer ring of voxels in green (white squares) and magenta (black squares).
+
+## Board clutter
+
+Mods can add grass, stones and other small decorations to every board square with a top-level
+`clutter` object, alongside `pieces`. A mod may contain only clutter: omit `pieces` entirely to
+decorate an existing set without changing its pieces or board. This requires a game build with
+clutter support.
+
+Here is a complete `mod.json` for a small grass decoration:
+
+```json
+{
+  "id": "little_grass",
+  "name": "Little grass",
+  "clutter": {
+    "grass": {
+      "count": { "min": 5, "max": 11 },
+      "piece_reaction": "bends",
+      "models": [
+        {
+          "model": {
+            "width": 3,
+            "boxes": [
+              { "from": [1, 0, 1], "to": [1, 3, 1], "material": "leaf" }
+            ]
+          },
+          "colors": {
+            "white": { "leaf": [91, 135, 52] },
+            "black": { "leaf": [91, 135, 52] }
+          }
+        }
+      ]
+    }
+  }
+}
+```
+
+Each key under `clutter` names a decoration type. Each type has:
+
+- **`count`**: a whole number from 0 to 32, or an inclusive range such as
+  `{"min": 5, "max": 11}`. The default is 1. Counts are chosen separately for each square;
+  a minimum of 0 allows empty squares.
+- **`models`**: 1–16 variants, each containing `model` and `colors` in the same format as pieces.
+  Each spawn chooses a variant with equal probability. One variant is enough.
+- **`piece_reaction`**: one of the following values.
+
+| Reaction | Behavior |
+|---|---|
+| `ignored` (default) | Static decoration with no collision. |
+| `bends` | Ground-level voxels stay planted; higher voxels bend away from nearby pieces and spring upright after they pass. Pieces flying above the decoration do not affect it. Uses batched meshes and a vertex shader, rather than individual physics bodies. |
+| `push` | Each decoration is an intact loose rigid body that pieces and rubble can shove. It sleeps naturally; objects falling below the board are hidden and frozen. |
+
+### Placement, colors and size
+
+Decorations are scattered across all 64 squares, including occupied ones. Positions keep the
+rotated footprint inside its square. Rotation is chosen from 16 orientations around the vertical
+axis, in 22.5-degree steps.
+
+Placement uses a deterministic seed per square and decoration type. Rebuilding the same mods or
+resuming a game reproduces the layout and variant choices; it does not save the displaced positions
+of loose `push` objects as chess state.
+
+Coordinates are integer voxel indices, with inclusive box corners, just like piece models.
+One voxel is 1/25 of a square. Width is 1–25; clutter is limited to 16 voxels high.
+Supply both palettes as usual, but clutter uses the **`white` palette on every square**.
+Using identical white and black palettes is a simple choice for neutral scenery.
+
+The game's **Piece size** setting also scales clutter, around each object's own planted position.
+It preserves the placement, rotations, counts and variant choices. Loose objects keep their current
+positions when resized, and their collision shapes scale too.
+
+### Limits and combining mods
+
+- Up to **8 named clutter types per pack**.
+- **1–16 model variants per type**, each with at most **512 voxels** and **16 voxels in height**.
+- Counts range from **0–32**; the sum of all types' maximum counts in one pack cannot exceed
+  **32 objects per square**.
+- Enabled packs merge clutter by name in menu order. A later definition replaces the **whole
+  earlier definition** with the same name. Different names coexist.
+- Across all enabled packs, the renderer allocates at most **32 objects per square** in merged
+  type order. Types reached after the budget is exhausted do not spawn.
+
+Clutter is cosmetic: it does not change legal moves, piece selection or saved chess moves.
+It rebuilds when changed mods are applied. Start with modest counts for `push` decorations,
+since each spawned object adds a physics body.
+
+### Editing
+
+Add or edit `clutter` in the Asset Builder's JSON editor, then save and enable the mod.
+JSON edits preserve clutter; there is no dedicated visual clutter modeling panel yet.
+A clutter-only pack installs and enables in the same way as a piece mod.
 
 ## The core set
 
